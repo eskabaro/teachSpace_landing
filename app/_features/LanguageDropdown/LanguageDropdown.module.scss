@@ -1,9 +1,0 @@
-@import '/app/_shared/const/variables';
-
-.button {
-    min-width: $point * 48;
-
-    @media (max-width: $screen-md) {
-        width: 100%;
-    }
-}

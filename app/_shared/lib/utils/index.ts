@@ -1,6 +1,3 @@
-import type { MutableRefObject, Ref } from 'react'
-import type { KeysType, ValueByKeysType } from '../types/helpers'
-
 export const lockScroll = () => {
     const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth
 
