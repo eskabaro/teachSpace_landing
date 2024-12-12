@@ -1,10 +1,8 @@
-import Image from 'next/image'
 import { useEffect, type ReactNode } from 'react'
 import classnames from '@shared/lib/classnames'
 import { lockScroll, unlockScroll } from '@shared/lib/utils'
 import Portal from '../Portal'
 import Transition from '../Transition'
-import bgImg from './assets/pattern.png'
 import s from './Drawer.module.scss'
 import DrawerBody from './ui/Body'
 import DrawerFooter from './ui/Footer'
@@ -37,7 +35,6 @@ const Drawer = ({ isOpen, close, contentClassName, children }: Props): JSX.Eleme
                     <div className={s.main_layout} onClick={close}>
                         <div className={classnames(s.main_content, contentClassName)} onClick={(e) => e.stopPropagation()}>
                             <div className={s.main_overflow}>{children}</div>
-                            <Image className={s.main_img} src={bgImg} width={1372} height={1552} alt='' />
                         </div>
                     </div>
                 </div>
