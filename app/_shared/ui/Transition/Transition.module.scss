@@ -1,0 +1,23 @@
+@import '/app/_shared/const/variables';
+
+.opacity {
+    &.entered {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    &.entering {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &.exiting {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &.exited {
+        visibility: hidden;
+        opacity: 0;
+    }
+}

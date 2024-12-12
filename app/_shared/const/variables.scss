@@ -1,0 +1,143 @@
+@use 'sass:math';
+
+// COLORS
+$white: var(--white);
+$gradient: var(--gradient);
+$secondaryGradient: var(--secondaryGradient);
+$gradientSkeleton: var(--gradientSkeleton);
+$authLayout: var(--authLayout);
+$boxShadow: var(--boxShadow);
+$boxShadowLith: var(--boxShadowLith);
+
+// Blue
+$neutral15: var(--neutral15);
+$neutral25: var(--neutral25);
+$neutral50: var(--neutral50);
+$neutral100: var(--neutral100);
+$neutral150: var(--neutral150);
+$neutral200: var(--neutral200);
+$neutral300: var(--neutral300);
+$neutral400: var(--neutral400);
+$neutral500: var(--neutral500);
+$neutral600: var(--neutral600);
+$neutral700: var(--neutral700);
+$neutral800: var(--neutral800);
+$neutral900: var(--neutral900);
+$neutral50p: var(--neutral50p);
+
+// Orange
+$primary15: var(--primary15);
+$primary25: var(--primary25);
+$primary50: var(--primary50);
+$primary100: var(--primary100);
+$primary150: var(--primary150);
+$primary200: var(--primary200);
+$primary300: var(--primary300);
+$primary400: var(--primary400);
+$primary500: var(--primary500);
+$primary600: var(--primary600);
+$primary700: var(--primary700);
+$primary900: var(--primary900);
+
+// Grey
+$grey5: var(--grey5);
+
+// Green
+$success50: var(--success50);
+$success100: var(--success100);
+$success500: var(--success500);
+$success600: var(--success600);
+
+// Red
+$danger50: var(--danger50);
+$danger100: var(--danger100);
+$danger500: var(--danger500);
+
+// SIZES
+$container: var(--container);
+
+// GLOBAL
+$fontSize: 14px;
+$lineHeight: 150%;
+$transition: 0.2s ease;
+$point: 4px;
+
+// MEDIA
+$screen-xxl: 1440px;
+$screen-xl: 1200px;
+$screen-lg: 991px;
+$screen-md: 767px;
+$screen-sm: 576px;
+$screen-xs: 470px;
+
+// MIXINS
+@mixin flexHorizontalSpace($count) {
+    display: flex;
+    gap: $count * $point;
+}
+
+@mixin flexVerticalSpace($count) {
+    display: flex;
+    flex-direction: column;
+    gap: $count * $point;
+}
+
+@mixin gradientSkeleton() {
+    position: relative;
+    background: $gradientSkeleton;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        visibility: hidden;
+        opacity: 0;
+        background: linear-gradient(90deg, #f9f8f8 0%, #e7e5e5 100%);
+        border-radius: inherit;
+        animation: gradient-animation 3s infinite ease-out;
+
+        @keyframes gradient-animation {
+            0%,
+            100% {
+                visibility: hidden;
+                opacity: 0;
+            }
+
+            50% {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@mixin scrollBar {
+    padding-right: $point * 3;
+
+    &::-webkit-scrollbar {
+        width: $point * 4;
+
+        &-thumb {
+            max-width: $point * 2;
+            background-color: $neutral150;
+            border: $point solid $neutral50;
+            border-radius: $point * 3;
+        }
+
+        &-track {
+            background-color: $neutral50;
+            border-radius: $point * 3;
+        }
+    }
+}
+
+@mixin generateUi($className, $property, $from, $to, $step: 1) {
+    @for $i from $from through $to {
+        $value: $i;
+
+        #{$className}#{$value} {
+            #{$property}: $value * $point;
+        }
+    }
+}

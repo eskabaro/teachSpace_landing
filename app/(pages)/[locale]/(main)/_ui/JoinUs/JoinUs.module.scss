@@ -1,0 +1,63 @@
+@import '/app/_shared/const/variables';
+
+.main {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $point * 12;
+    margin-block: $point * 20;
+    background-color: $primary500;
+    border-radius: $point * 6;
+
+    &_content {
+        padding: $point * 12 0 $point * 12 $point * 12;
+    }
+
+    &_img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+        object-position: left;
+    }
+
+    @media all and (width <= $screen-lg) {
+        gap: $point * 6;
+        margin-top: 0;
+        margin-bottom: $point * 12;
+
+        &_content {
+            padding: $point * 6 0 $point * 6 $point * 6;
+        }
+    }
+
+    @media all and (width <= $screen-md) {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, auto);
+        margin-bottom: $point * 6;
+    }
+
+    @media all and (width <= $screen-sm) {
+        gap: 0;
+
+        &_content {
+            padding: $point * 6 $point * 6 0 $point * 6;
+        }
+    }
+}
+
+.listItem {
+    position: relative;
+    padding-left: $point * 5;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: $point * 2;
+        transform: translateY(-50%);
+        width: $point;
+        height: $point;
+        background-color: $white;
+        border-radius: 50%;
+    }
+}

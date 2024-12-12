@@ -1,0 +1,187 @@
+@import '/app/_shared/const/variables';
+
+.main {
+    position: relative;
+
+    &_bg {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+    }
+}
+
+.title {
+    position: relative;
+    max-width: $point * 95;
+    padding-top: $point * 20;
+
+    @media all and (width <= $screen-lg) {
+        max-width: $point * 85;
+    }
+
+    @media all and (width <= $screen-md) {
+        max-width: $point * 75;
+    }
+
+    @media all and (width <= $screen-sm) {
+        padding-top: $point * 12;
+        padding-inline: $point * 6;
+    }
+}
+
+.list {
+    margin: $point * 8;
+    margin-bottom: $point * 20;
+
+    .block {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        width: $point * 2;
+        height: $point * 4;
+        background-color: $white;
+    }
+
+    @media all and (width <= $screen-lg) {
+        margin: $point * 7;
+        margin-bottom: $point * 12;
+
+        span {
+            font-size: $point * 3.5;
+            text-align: center;
+        }
+    }
+
+    @media all and (width <= $screen-md) {
+        margin-top: 0;
+        margin-bottom: $point * 6;
+    }
+
+    @media all and (width <= $screen-sm) {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $point * 4;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: $neutral100;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 1px;
+            height: 100%;
+            background-color: $neutral100;
+        }
+
+        .block {
+            display: block;
+        }
+
+        > li {
+            width: 100%;
+        }
+
+        span {
+            width: 70%;
+            font-size: $point * 3;
+        }
+
+        svg {
+            width: $point * 6;
+            height: $point * 6;
+        }
+
+        .verticalLine {
+            display: none;
+        }
+    }
+}
+
+.preview {
+    padding-inline: $point * 28;
+
+    @media all and (width <= $screen-lg) {
+        padding-inline: $point * 15.5;
+    }
+
+    @media all and (width <= $screen-sm) {
+        padding-inline: 0;
+    }
+}
+
+.verticalLine {
+    width: 1px;
+    height: 100%;
+    background-color: $neutral100;
+}
+
+.badge {
+    position: absolute;
+    top: $point * 26;
+    right: $point * 5;
+
+    &_wrapper {
+        position: relative;
+
+        .arrowMobile {
+            position: absolute;
+            display: none;
+        }
+
+        .arrow {
+            position: absolute;
+        }
+
+        .text {
+            position: absolute;
+            top: $point * -5;
+            right: $point * -36;
+            transform: rotate(30deg);
+            font-size: $point * 4;
+            font-weight: 500;
+            color: $primary300;
+            text-wrap: nowrap;
+            letter-spacing: 0.64px;
+        }
+    }
+
+    @media all and (width <= $screen-md) {
+        top: $point * 22;
+        right: $point * 7.5;
+    }
+
+    @media all and (width <= $screen-sm) {
+        right: $point * 8.75;
+
+        &_wrapper {
+            .text {
+                top: $point * -12;
+                right: $point * -11.5;
+                transform: rotate(10deg);
+                font-size: $point * 2;
+            }
+
+            .arrow {
+                display: none;
+            }
+
+            .arrowMobile {
+                top: $point * -5;
+                display: block;
+            }
+        }
+    }
+}

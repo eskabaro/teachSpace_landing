@@ -1,0 +1,72 @@
+@import '/app/_shared/const/variables';
+
+.header {
+    gap: $point * 6;
+    padding-block: $point * 6;
+
+    &_logo > img {
+        object-fit: cover;
+    }
+
+    &_burger {
+        display: none !important;
+    }
+
+    @media (any-hover: hover) {
+        &_menu:hover a {
+            filter: blur(1px);
+        }
+
+        &_menu:hover a:hover {
+            filter: blur(0);
+        }
+    }
+
+    @media all and (width <= $screen-xl) {
+        gap: $point * 5;
+        justify-content: normal;
+
+        &_burger {
+            display: flex !important;
+            order: 1;
+        }
+
+        &_logo {
+            order: 2;
+        }
+
+        &_btn {
+            order: 3;
+            margin-left: auto;
+        }
+
+        &_menu {
+            display: none;
+        }
+    }
+
+    @media all and (width <= $screen-lg) {
+        padding-block: $point * 4;
+    }
+
+    @media all and (width <= $screen-md) {
+        justify-content: space-between;
+
+        &_btn {
+            display: none !important;
+        }
+
+        &_burger {
+            order: 2;
+        }
+
+        &_logo {
+            order: 1;
+
+            > img {
+                width: $point * 33;
+                height: $point * 8;
+            }
+        }
+    }
+}

@@ -1,0 +1,181 @@
+@import '/app/_shared/const/variables';
+
+.main {
+    @include flexHorizontalSpace(3);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    white-space: nowrap;
+    transition: all $transition;
+
+    &.full {
+        width: 100%;
+    }
+
+    &.mode-icon {
+        flex-shrink: 0;
+        padding: 0;
+        border-radius: 50%;
+    }
+}
+
+// Sizes
+.large {
+    height: $point * 12;
+    padding: 3.5 * $point 6 * $point;
+    border-radius: $point * 3;
+
+    & > svg {
+        flex: 0 0 $point * 5;
+        width: $point * 5;
+        height: $point * 5;
+    }
+
+    &.mode-icon {
+        width: $point * 12;
+    }
+}
+
+.medium {
+    height: $point * 11;
+    padding: $point * 3 $point * 4;
+    border-radius: $point * 3;
+
+    & > svg {
+        flex-shrink: 0;
+        width: $point * 5;
+        height: $point * 5;
+    }
+
+    &.mode-icon {
+        width: $point * 11;
+    }
+}
+
+.small {
+    height: $point * 9.5;
+    padding: $point * 2.5 $point * 2.75;
+    border-radius: $point;
+
+    & > svg {
+        flex-shrink: 0;
+        width: $point * 4;
+        height: $point * 4;
+    }
+
+    &.mode-icon {
+        width: $point * 9.5;
+    }
+}
+
+// Colors
+.primary {
+    position: relative;
+    background: $primary500;
+    border: 2px solid transparent;
+    color: $white;
+
+    &:active {
+        background-color: $primary600;
+    }
+
+    &:focus-visible {
+        background-color: $primary600;
+        outline: $point solid $primary200;
+    }
+
+    &:disabled {
+        cursor: default;
+        background: $neutral50;
+        color: $neutral200;
+    }
+
+    @media (any-hover: hover) {
+        &:hover:not(:disabled) {
+            background-color: $primary600;
+        }
+    }
+}
+
+.secondary {
+    background-color: $white;
+    border: 1px solid $white;
+    color: $neutral900;
+
+    &:active {
+        background-color: $primary100;
+    }
+
+    &:focus-visible {
+        background-color: $primary100;
+        outline: $point solid $primary200;
+    }
+
+    &:disabled {
+        cursor: default;
+        background: $neutral50;
+        color: $neutral200;
+    }
+
+    @media (any-hover: hover) {
+        &:hover:not(:disabled) {
+            background-color: transparent;
+            color: $white;
+        }
+    }
+}
+
+.transparent {
+    background: transparent;
+    color: $neutral900;
+
+    &:active {
+        color: $neutral500;
+    }
+
+    &:focus-visible {
+        outline: $point solid $primary200;
+        color: $neutral500;
+    }
+
+    &:disabled {
+        cursor: default;
+        color: $neutral200;
+    }
+
+    @media (any-hover: hover) {
+        &:hover:not(:disabled) {
+            color: $neutral500;
+        }
+    }
+}
+
+.border {
+    background: transparent;
+    border: 1px solid $neutral100;
+    color: $white;
+
+    &:active {
+        background-color: $neutral50;
+    }
+
+    &:focus-visible {
+        outline: $point solid $primary200;
+    }
+
+    &:disabled {
+        cursor: default;
+        color: $neutral200;
+    }
+
+    @media (any-hover: hover) {
+        &:hover:not(:disabled) {
+            background-color: $neutral50;
+            color: $neutral900;
+        }
+    }
+}

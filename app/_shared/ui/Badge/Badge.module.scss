@@ -1,0 +1,38 @@
+@import '/app/_shared/const/variables';
+
+.badge {
+    @include flexHorizontalSpace(2);
+    align-items: center;
+    width: fit-content;
+    padding: $point * 0.5 $point * 3 $point * 0.5 $point * 0.5;
+    border-radius: $point * 2;
+
+    &_icon {
+        padding: $point;
+        border-radius: $point * 1.5;
+    }
+}
+
+.primary {
+    background-color: $white;
+
+    > .badge_icon {
+        background-color: $primary50;
+    }
+}
+
+.secondary {
+    background-color: $neutral50;
+
+    > .badge_icon {
+        background-color: $white;
+    }
+}
+
+.blue {
+    background-color: $primary400;
+
+    > .badge_icon {
+        background-color: $primary500;
+    }
+}

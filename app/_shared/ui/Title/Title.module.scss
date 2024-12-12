@@ -1,0 +1,7 @@
+@import '/app/_shared/const/variables';
+
+@media all and (width <= $screen-sm) {
+    .alignCenter {
+        text-align: center;
+    }
+}

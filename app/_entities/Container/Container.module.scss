@@ -1,0 +1,33 @@
+@import '/app/_shared/const/variables';
+
+.main {
+    position: relative;
+
+    &_wrapper {
+        width: 100%;
+        max-width: $container;
+        margin-inline: auto;
+        padding-inline: $point * 6;
+    }
+
+    &_bgRight,
+    &_bgLeft {
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+    }
+
+    &_bgLeft {
+        left: 0;
+    }
+
+    &_bgRight {
+        right: 0;
+    }
+
+    @media all and (width <= $screen-md) {
+        &_wrapper {
+            padding-inline: $point * 4;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@import '/app/_shared/const/variables';
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $point * 20;
+    padding-block: $point * 20;
+
+    @media all and (width <= $screen-lg) {
+        padding-block: $point * 12;
+    }
+
+    @media all and (width <= $screen-md) {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, auto);
+        gap: $point * 12;
+        padding-block: $point * 6;
+    }
+}

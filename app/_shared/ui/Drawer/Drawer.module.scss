@@ -1,0 +1,114 @@
+@import '/app/_shared/const/variables';
+
+.main {
+    position: fixed;
+    z-index: 100;
+    inset: 0;
+    margin: auto;
+
+    &_img {
+        z-index: -1;
+    }
+
+    &_layout {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: $point * 6;
+        background-color: $neutral50p;
+        transition: inherit;
+
+        .entered & {
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        .entering & {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .exiting & {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .exited & {
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        @media (max-width: $screen-md) {
+            padding: $point * 4;
+        }
+    }
+
+    &_content {
+        position: absolute;
+        z-index: 1;
+        right: $point * 6;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - $point * 12);
+        max-width: $point * 100;
+        height: calc(100% - $point * 12);
+        background-color: $white;
+        background-image: url('./assets/bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: $point * 3;
+        box-shadow:
+            0 $point * 2 $point * 2 $point * -1 #1018280a,
+            0 $point * 5 $point * 6 $point * -1 #1018281a;
+        transition: inherit;
+
+        .entered & {
+            right: -50%;
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        .entering & {
+            right: $point * 6;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .exiting & {
+            right: $point * 6;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .exited & {
+            right: -50%;
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        @media (max-width: $screen-md) {
+            right: $point * 4;
+            align-items: center;
+            justify-content: center;
+            width: calc(100% - $point * 8);
+            height: calc(100vh - $point * 8);
+
+            .entering & {
+                right: $point * 4;
+            }
+        }
+
+        @supports (-webkit-touch-callout: none) {
+            height: stretch !important;
+        }
+    }
+
+    &_overflow {
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+}

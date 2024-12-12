@@ -1,0 +1,56 @@
+:root {
+    --white: #fff;
+    --gradient: linear-gradient(92.95deg, #edf2f9 0%, #fafafc 100%); // need change
+    --secondaryGradient: linear-gradient(180deg, #dce5f4 0%, #f4f4f4 100%); // need change
+    --gradientSkeleton: linear-gradient(90deg, #e7e5e5 0%, #f9f8f8 100%);
+    --authLayout: linear-gradient(90deg, rgb(255 255 255 / 64%) 5%, rgb(255 255 255 / 0%) 100%);
+    --boxShadowLith: 0px 4px 32px -4px rgb(0 0 0 / 4%);
+    --boxShadow: 0px 12px 48px -8px rgb(0 0 0 / 8%);
+
+    // neutral
+    --neutral15: #fafafc; // need change
+    --neutral25: #f4f4f4; // need change
+    --neutral50: #f3f4f5;
+    --neutral100: #e3e4e5;
+    --neutral150: #b7b9bf; // need change
+    --neutral200: #b5b6b9;
+    --neutral300: #9c9ea1;
+    --neutral400: #83868a;
+    --neutral500: #6b6e72;
+    --neutral600: #52555b;
+    --neutral700: #393d43;
+    --neutral800: #21252c;
+    --neutral900: #080d14;
+    --neutral50p: #0f172a80; // need change
+
+    // primary
+    --primary15: #fffaf9; // need change
+    --primary25: #fef6f4; // need change
+    --primary50: #edf2f9;
+    --primary100: #dce5f4;
+    --primary150: #fad2c8; // need change
+    --primary200: #b8cbe9;
+    --primary300: #95b0de;
+    --primary400: #7196d3;
+    --primary500: #4e7cc8;
+    --primary600: #1b4995;
+    --primary700: #012f7b;
+    --primary900: #000048;
+
+    // success
+    --success50: #ecfbf1;
+    --success100: #daf6e3;
+    --success500: #45d375;
+    --success600: #45d375;
+
+    // Grey
+    --grey5: #e0e0e0;
+
+    // danger
+    --danger50: #ffefee;
+    --danger100: #ffdedd;
+    --danger500: #ff5c53;
+
+    // Sizes
+    --container: 1368px;
+}

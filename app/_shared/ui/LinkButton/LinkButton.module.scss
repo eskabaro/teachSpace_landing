@@ -1,0 +1,48 @@
+@import '/app/_shared/const/variables';
+
+.main {
+    @include flexHorizontalSpace(2);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    border-radius: $point;
+    line-height: 100%;
+    color: $primary500;
+    white-space: nowrap;
+    transition:
+        all $transition,
+        outline 0s;
+    -webkit-tap-highlight-color: transparent;
+
+    &:active {
+        color: $primary600;
+    }
+
+    &:disabled {
+        cursor: default;
+        color: $neutral200;
+    }
+
+    &:focus-visible {
+        outline: $point solid $primary200;
+    }
+
+    & > svg {
+        flex: 0 0 $point * 4;
+        width: $point * 4;
+        height: $point * 4;
+    }
+
+    &_content {
+        .underline & {
+            text-decoration: underline;
+        }
+    }
+
+    @media (any-hover: hover) {
+        &:hover {
+            color: $primary600;
+        }
+    }
+}

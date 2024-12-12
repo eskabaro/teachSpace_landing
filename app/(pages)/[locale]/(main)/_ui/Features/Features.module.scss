@@ -1,0 +1,157 @@
+@import '/app/_shared/const/variables';
+
+.main {
+    padding-block: $point * 20;
+
+    &_content {
+        display: flex;
+        flex-direction: column;
+        gap: $point * 6;
+    }
+
+    @media all and (width <= $screen-lg) {
+        gap: $point * 4;
+        padding-block: $point * 12;
+
+        &_content {
+            gap: $point * 4;
+        }
+    }
+
+    @media all and (width <= $screen-md) {
+        padding-block: $point * 6;
+    }
+}
+
+.item {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background-color: $primary50;
+    border-radius: $point * 6;
+}
+
+.top {
+    > .item:nth-of-type(1) {
+        padding: $point * 16;
+        background-image: url('./assets/first-bg.png');
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: contain;
+
+        > .item_bg {
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+    > .item:nth-of-type(2) {
+        padding: 0 $point * 16 $point * 16;
+        background-image: url('./assets/second-bg.png');
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: contain;
+
+        > .item_bg {
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    @media all and (width <= $screen-lg) {
+        > .item:nth-of-type(1) {
+            padding: $point * 12;
+        }
+
+        > .item:nth-of-type(2) {
+            padding: 0 $point * 12 $point * 12;
+        }
+    }
+
+    @media all and (width <= $screen-md) {
+        > .item:nth-of-type(1) {
+            padding: $point * 6;
+            background-size: cover;
+        }
+
+        > .item:nth-of-type(2) {
+            padding: 0 $point * 6 $point * 6;
+            background-image: url('./assets/first-bg.png');
+            background-position: right bottom;
+            background-size: cover;
+        }
+    }
+}
+
+.bottom {
+    > .item:nth-of-type(1) {
+        padding: $point * 16 $point * 16 0;
+        background-image: url('./assets/third-bg.png');
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: contain;
+
+        > .item_bg {
+            top: 0;
+            right: 0;
+        }
+    }
+
+    > .item:nth-of-type(2) {
+        padding: $point * 16;
+        background-image: url('./assets/fourth-bg.png');
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: contain;
+
+        > .item_bg {
+            top: 0;
+            left: 0;
+        }
+    }
+
+    @media all and (width <= $screen-lg) {
+        > .item:nth-of-type(1) {
+            padding: $point * 12 $point * 12 0;
+        }
+
+        > .item:nth-of-type(2) {
+            padding: $point * 12;
+        }
+    }
+
+    @media all and (width <= $screen-md) {
+        > .item:nth-of-type(1) {
+            order: 2;
+            padding: $point * 12 $point * 12 0 $point * 12;
+            background-image: url('./assets/first-bg.png');
+            background-position: right bottom;
+            background-size: cover;
+        }
+
+        > .item:nth-of-type(2) {
+            order: 1;
+            background-image: url('./assets/first-bg.png');
+            background-position: right bottom;
+            background-size: cover;
+        }
+    }
+
+    @media all and (width <= $screen-sm) {
+        > .item:nth-of-type(1) {
+            padding: 0 $point * 6 $point * 6;
+
+            > h1 {
+                order: 2;
+            }
+
+            > div {
+                order: 1;
+            }
+        }
+
+        > .item:nth-of-type(2) {
+            padding: $point * 6;
+        }
+    }
+}

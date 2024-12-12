@@ -1,0 +1,54 @@
+@import '/app/_shared/const/variables';
+
+.mobileImage,
+.tabletImage,
+.desktopImage {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    > img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.mobileImage {
+    display: none;
+}
+
+.tabletImage {
+    display: none;
+}
+
+.desktopImage {
+    display: flex;
+}
+
+@media (width <= $screen-lg) {
+    .mobileImage {
+        display: none;
+    }
+
+    .tabletImage {
+        display: flex;
+    }
+
+    .desktopImage {
+        display: none;
+    }
+}
+
+@media all and (width <= $screen-sm) {
+    .mobileImage {
+        display: flex;
+    }
+
+    .tabletImage {
+        display: none;
+    }
+
+    .desktopImage {
+        display: none;
+    }
+}

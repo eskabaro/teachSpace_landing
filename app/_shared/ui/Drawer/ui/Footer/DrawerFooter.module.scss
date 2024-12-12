@@ -1,0 +1,10 @@
+@import '/app/_shared/const/variables';
+
+.main {
+    padding: $point * 6;
+    border-top: 1px solid $neutral100;
+
+    @media (max-width: $screen-xl) {
+        padding: $point * 4;
+    }
+}

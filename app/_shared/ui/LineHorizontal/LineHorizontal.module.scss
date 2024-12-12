@@ -1,0 +1,25 @@
+@import '/app/_shared/const/variables';
+
+.lineDefault {
+    width: 100%;
+    min-height: 1px;
+    max-height: 1px;
+    transition: background-color $transition;
+}
+
+.lineWithText {
+    &_left,
+    &_right {
+        width: 100%;
+        min-height: 1px;
+        max-height: 1px;
+    }
+
+    &_left {
+        background: linear-gradient(-90deg, #e3e4e5 0%, rgb(255 255 255 / 0%) 100%);
+    }
+
+    &_right {
+        background: linear-gradient(90deg, #e3e4e5 0%, rgb(255 255 255 / 0%) 100%);
+    }
+}

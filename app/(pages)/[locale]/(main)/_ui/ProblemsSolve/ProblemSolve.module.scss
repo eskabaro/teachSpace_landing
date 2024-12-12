@@ -1,0 +1,69 @@
+@import '/app/_shared/const/variables';
+
+.main {
+    position: relative;
+    margin-block: $point * 20;
+    padding: $point * 16;
+    background-color: $primary50;
+    border-radius: $point * 4;
+
+    &_bgTop,
+    &_bgBottom {
+        position: absolute;
+        z-index: 0;
+    }
+
+    &_bgTop {
+        top: 0;
+        left: 0;
+    }
+
+    &_bgBottom {
+        right: 0;
+        bottom: 0;
+    }
+
+    &_content {
+        position: relative;
+        z-index: 1;
+    }
+
+    @media all and (width <= $screen-lg) {
+        margin-block: $point * 12;
+        padding: $point * 12;
+
+        &_content {
+            gap: $point * 6;
+        }
+    }
+
+    @media all and (width <= $screen-md) {
+        margin-block: $point * 6;
+        padding: $point * 6;
+
+        &_content {
+            gap: $point * 4;
+        }
+    }
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $point * 12;
+    place-items: center;
+    padding: $point * 12;
+    background-color: $white;
+    border-radius: $point * 4;
+
+    @media all and (width <= $screen-lg) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        gap: $point * 6;
+        padding: $point * 6;
+
+        .slide {
+            width: 100%;
+        }
+    }
+}

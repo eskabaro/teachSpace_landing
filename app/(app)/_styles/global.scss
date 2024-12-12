@@ -1,0 +1,409 @@
+@import '/app/_shared/const/variables';
+@import './root';
+@import './null';
+@import './ui';
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+
+    &-thumb {
+        background-color: $neutral150;
+        border-radius: $point * 3;
+    }
+
+    &-track {
+        background-color: transparent;
+    }
+}
+
+.scroll-lock {
+    overflow: hidden;
+}
+
+.overflowY-auto {
+    overflow-y: auto;
+}
+
+.flex_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_wrap {
+    flex-wrap: wrap;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.relative {
+    position: relative;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.hover-opacity {
+    @media (any-hover: hover) {
+        transition: opacity $transition;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+.hover-info {
+    @media (any-hover: hover) {
+        transition: all $transition;
+
+        &:hover {
+            background-color: $neutral15;
+            border-color: $neutral100;
+            box-shadow: 0 $point * 5 $point * 5 $point * -4 #5d5d5d3d;
+        }
+    }
+}
+
+@include generateUi('.p', 'padding', 1, 10);
+
+@media (max-width: $screen-xxl) {
+    @include generateUi('.xxl_p', 'padding', 1, 10);
+}
+
+@media (max-width: $screen-xl) {
+    @include generateUi('.xl_p', 'padding', 1, 10);
+}
+
+@media (max-width: $screen-lg) {
+    @include generateUi('.lg_p', 'padding', 1, 10);
+}
+
+@media (max-width: $screen-md) {
+    @include generateUi('.md_p', 'padding', 1, 10);
+}
+
+@media (max-width: $screen-sm) {
+    @include generateUi('.sm_p', 'padding', 1, 10);
+}
+
+.screen-md-less {
+    display: none;
+
+    @media (max-width: $screen-md) {
+        display: inherit;
+    }
+}
+
+.screen-md-more {
+    display: inherit;
+
+    @media (max-width: $screen-md) {
+        display: none;
+    }
+}
+
+.w100p {
+    width: 100%;
+}
+
+.min_h100p {
+    min-height: 100%;
+}
+
+.box_shadow {
+    box-shadow: $boxShadow;
+}
+
+// BACKGROUNDS
+.background_white {
+    background-color: $white;
+}
+
+.background_gradient {
+    background: $gradient;
+}
+
+.background_secondaryGradient {
+    background: $secondaryGradient;
+}
+
+.background_gradientSkeleton {
+    background: $gradientSkeleton;
+}
+
+// Blue
+.background_neutral15 {
+    background-color: $neutral15;
+}
+
+.background_neutral25 {
+    background-color: $neutral25;
+}
+
+.background_neutral50 {
+    background-color: $neutral50;
+}
+
+.background_neutral100 {
+    background-color: $neutral100;
+}
+
+.background_neutral150 {
+    background-color: $neutral150;
+}
+
+.background_neutral200 {
+    background-color: $neutral200;
+}
+
+.background_neutral300 {
+    background-color: $neutral300;
+}
+
+.background_neutral400 {
+    background-color: $neutral400;
+}
+
+.background_neutral500 {
+    background-color: $neutral500;
+}
+
+.background_neutral600 {
+    background-color: $neutral600;
+}
+
+.background_neutral50p {
+    background-color: $neutral50p;
+}
+
+// Orange
+.background_primary15 {
+    background-color: $primary15;
+}
+
+.background_primary25 {
+    background-color: $primary25;
+}
+
+.background_primary50 {
+    background-color: $primary50;
+}
+
+.background_primary100 {
+    background-color: $primary100;
+}
+
+.background_primary150 {
+    background-color: $primary150;
+}
+
+.background_primary200 {
+    background-color: $primary200;
+}
+
+.background_primary300 {
+    background-color: $primary300;
+}
+
+.background_primary400 {
+    background-color: $primary400;
+}
+
+.background_primary500 {
+    background-color: $primary500;
+}
+
+.background_primary600 {
+    background-color: $primary600;
+}
+
+.background_primary700 {
+    background-color: $primary700;
+}
+
+// Grey
+.background_grey5 {
+    background-color: $grey5;
+}
+
+// Green
+.background_success50 {
+    background-color: $success50;
+}
+
+.background_success600 {
+    background-color: $success600;
+}
+
+// Red
+.background_red50 {
+    background-color: $danger50;
+}
+
+.background_red500 {
+    background-color: $danger500;
+}
+
+// COLORS
+.color_white {
+    color: $white;
+}
+
+.color_gradient {
+    background: $gradient;
+    background-clip: text;
+    color: transparent;
+}
+
+.color_secondaryGradient {
+    background: $secondaryGradient;
+    background-clip: text;
+    color: transparent;
+}
+
+.color_gradientSkeleton {
+    background: $gradientSkeleton;
+    background-clip: text;
+    color: transparent;
+}
+
+// Blue
+.color_neutral15 {
+    color: $neutral15;
+}
+
+.color_neutral25 {
+    color: $neutral25;
+}
+
+.color_neutral50 {
+    color: $neutral50;
+}
+
+.color_neutral100 {
+    color: $neutral100;
+}
+
+.color_neutral150 {
+    color: $neutral150;
+}
+
+.color_neutral200 {
+    color: $neutral200;
+}
+
+.color_neutral300 {
+    color: $neutral300;
+}
+
+.color_neutral400 {
+    color: $neutral400;
+}
+
+.color_neutral500 {
+    color: $neutral500;
+}
+
+.color_neutral600 {
+    color: $neutral600;
+}
+
+.color_neutral700 {
+    color: $neutral700;
+}
+
+.color_neutral800 {
+    color: $neutral800;
+}
+
+.color_neutral900 {
+    color: $neutral900;
+}
+
+.color_neutral50p {
+    color: $neutral50p;
+}
+
+// Orange
+.color_primary15 {
+    color: $primary15;
+}
+
+.color_primary25 {
+    color: $primary25;
+}
+
+.color_primary50 {
+    color: $primary50;
+}
+
+.color_primary100 {
+    color: $primary100;
+}
+
+.color_primary150 {
+    color: $primary150;
+}
+
+.color_primary200 {
+    color: $primary200;
+}
+
+.color_primary300 {
+    color: $primary300;
+}
+
+.color_primary400 {
+    color: $primary400;
+}
+
+.color_primary500 {
+    color: $primary500;
+}
+
+.color_primary600 {
+    color: $primary600;
+}
+
+.color_primary700 {
+    color: $primary700;
+}
+
+.color_primary900 {
+    color: $primary900;
+}
+
+// Grey
+.color_grey5 {
+    color: $grey5;
+}
+
+// Green
+.color_success50 {
+    color: $success50;
+}
+
+.color_success600 {
+    color: $success600;
+}
+
+// Red
+.color_danger50 {
+    color: $danger50;
+}
+
+.color_danger500 {
+    color: $danger500;
+}

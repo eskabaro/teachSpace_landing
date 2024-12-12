@@ -1,0 +1,6 @@
+@import '/app/_shared/const/variables';
+
+.link {
+    padding-inline: $point * 6;
+    transition: $transition;
+}

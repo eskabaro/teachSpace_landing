@@ -1,0 +1,7 @@
+@import '/app/_shared/const/variables';
+
+.counter {
+    position: absolute;
+    right: $point;
+    bottom: $point;
+}

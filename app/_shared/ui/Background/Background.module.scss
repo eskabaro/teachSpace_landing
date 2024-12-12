@@ -1,0 +1,8 @@
+@import '/app/_shared/const/variables';
+
+.main {
+    width: 100%;
+    background-color: $white;
+    border: 1px solid $neutral100;
+    border-radius: $point * 4;
+}
