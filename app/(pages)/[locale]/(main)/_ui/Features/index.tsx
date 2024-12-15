@@ -8,10 +8,10 @@ import ResponsiveImage from '@shared/ui/ResponsiveImage'
 import Space from '@shared/ui/Space'
 import Title from '@shared/ui/Title'
 import Text from '@shared/ui/Typography'
-import phonesBottomMobileImg from './assets/phones-bottom-mobile.png'
+import phonesBottomMobileImg from './assets/phones-bottom-mobile.svg'
 import phonesBottomTabletImg from './assets/phones-bottom-tablet.png'
 import phonesBottomImg from './assets/phones-bottom.png'
-import phonesTopMobileImg from './assets/phones-top-mobile.png'
+import phonesTopMobileImg from './assets/phones-top-mobile.svg'
 import phonesTopTabletImg from './assets/phones-top-tablet.png'
 import phonesTopImg from './assets/phones-top.png'
 import s from './Features.module.scss'
@@ -40,7 +40,7 @@ const Features: FC = () => {
                         <ResponsiveImage
                             desktop={{ src: phonesTopImg, alt: '', width: 408, height: 298 }}
                             tablet={{ src: phonesTopTabletImg, width: 200, height: 294, alt: '' }}
-                            mobile={{ src: phonesTopMobileImg, width: 296, height: 294, alt: '' }}
+                            mobile={{ className: s.imageWidth, src: phonesTopMobileImg, width: 296, height: 294, alt: '' }}
                         />
                         <Text size='28' lgSize='24' mdSize='22' weight='700' lineHeight='120'>
                             Create materials easily
@@ -55,7 +55,7 @@ const Features: FC = () => {
                         <ResponsiveImage
                             desktop={{ src: phonesBottomImg, alt: '', width: 408, height: 282 }}
                             tablet={{ src: phonesBottomTabletImg, width: 200, height: 294, alt: '' }}
-                            mobile={{ src: phonesBottomMobileImg, width: 296, height: 294, alt: '' }}
+                            mobile={{ className: s.imageWidth, src: phonesBottomMobileImg, width: 296, height: 294, alt: '' }}
                         />
                     </Space>
                     <Space className={s.item} w='60p' direction='vertical' gap='16' lg={{ gap: '6' }} md={{ w: '100p' }}>

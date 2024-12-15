@@ -155,3 +155,9 @@
         }
     }
 }
+
+@media all and (width <= $screen-sm) {
+    .imageWidth {
+        width: revert-layer !important;
+    }
+}

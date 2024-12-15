@@ -41,7 +41,14 @@ const Preview: FC = () => {
     return (
         <Flex className={s.main} as='section'>
             <ResponsiveImage
-                desktop={{ classNameBlock: s.main_bg, src: bgImg, quality: 100, priority: true, alt: '' }}
+                desktop={{
+                    classNameBlock: s.main_bg,
+                    src: bgImg,
+                    quality: 100,
+                    priority: true,
+                    alt: '',
+                    placeholder: 'blur'
+                }}
                 tablet={{ classNameBlock: s.main_bg, src: tabletBgImg, quality: 100, priority: true, alt: '' }}
                 mobile={{ classNameBlock: s.main_bg, src: mobileBgImg, quality: 100, priority: true, alt: '' }}
             />
@@ -60,7 +67,7 @@ const Preview: FC = () => {
                         Book a call
                     </Button>
                 </Space>
-                <ResponsiveImage desktop={{ classNameBlock: s.preview, src: macbookImg, alt: '' }} mobile={{ classNameBlock: s.preview, src: phonesImg, alt: '' }} />
+                <ResponsiveImage desktop={{ classNameBlock: s.preview, src: macbookImg, alt: '', placeholder: 'empty', loading: 'eager' }} mobile={{ classNameBlock: s.preview, src: phonesImg, alt: '', placeholder: 'empty', loading: 'eager' }} />
                 <Space className={s.list} gap='6' lg={{ gap: '5' }} direction='horizontal' justify='center' as='ul'>
                     <Each
                         of={list}
