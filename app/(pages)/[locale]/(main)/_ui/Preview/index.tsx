@@ -49,8 +49,8 @@ const Preview: FC = () => {
                     alt: '',
                     placeholder: 'blur'
                 }}
-                tablet={{ classNameBlock: s.main_bg, src: tabletBgImg, quality: 100, priority: true, alt: '' }}
-                mobile={{ classNameBlock: s.main_bg, src: mobileBgImg, quality: 100, priority: true, alt: '' }}
+                tablet={{ classNameBlock: s.main_bg, src: tabletBgImg, quality: 100, priority: true, alt: '', placeholder: 'blur' }}
+                mobile={{ classNameBlock: s.main_bg, src: mobileBgImg, quality: 100, priority: true, alt: '', placeholder: 'blur' }}
             />
             <Space direction='vertical' align='center' w='100p' gap='12' lg={{ gap: '5' }}>
                 <Space direction='vertical' gap='6' align='center' lg={{ gap: '5' }}>
