@@ -20,20 +20,20 @@ import s from './Preview.module.scss'
 
 const list = [
     {
-        icon: 'time',
-        text: 'Time-Saving Tools for Teaching"'
-    },
-    {
-        icon: 'mouse-circle',
-        text: 'Ease of Use for Teaching'
-    },
-    {
-        icon: 'teacher',
-        text: 'Customization for students'
-    },
-    {
         icon: 'book',
-        text: 'Full control over lesson plans'
+        text: 'Create a convenient learning plan.'
+    },
+    {
+        icon: 'chart-success',
+        text: 'Check homework effortlessly with AI.'
+    },
+    {
+        icon: 'status-up',
+        text: 'Track your students’ progress.'
+    },
+    {
+        icon: 'magicpen',
+        text: 'Design high-quality lessons with AI.'
     }
 ]
 
@@ -59,12 +59,12 @@ const Preview: FC = () => {
                             Focus on Students, Not on Routine
                         </Title>
                         <Text size='18' lgSize='16' mdSize='14' lineHeight='140' color='neutral600' align='center'>
-                            TeachSpace allows you to dedicate more time to your students by saving time on lesson planning and material preparation.
+                            TeachSpace allows you to dedicate more time to your students by saving time on lesson planning, creating homework assignments, and preparing materials for lesson
                         </Text>
                         <Badge />
                     </Space>
-                    <Button as={Link} href={links.bookCall}>
-                        Book a call
+                    <Button as={Link} href={links.register}>
+                        Get started for free
                     </Button>
                 </Space>
                 <ResponsiveImage desktop={{ classNameBlock: s.preview, src: macbookImg, alt: '', placeholder: 'empty', loading: 'eager' }} mobile={{ classNameBlock: s.preview, src: phonesImg, alt: '', placeholder: 'empty', loading: 'eager' }} />
@@ -77,7 +77,7 @@ const Preview: FC = () => {
                             return (
                                 <>
                                     <Space direction='horizontal' lg={{ direction: 'vertical', gap: '3' }} gap='6' align='center' as='li'>
-                                        <Icon name={icon as IconsType} width={40} height={40} color='neutral300' />
+                                        <Icon name={icon as IconsType} width={48} height={48} color='neutral300' />
                                         <Text as='span' size='16' lineHeight='140' color='neutral700'>
                                             {text}
                                         </Text>

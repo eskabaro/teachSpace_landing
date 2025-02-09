@@ -11,8 +11,10 @@ const nextConfig = {
     env: {
         CONTACT_US_LINK: process.env.CONTACT_US_LINK,
         BOOK_CALL_LINK: process.env.BOOK_CALL_LINK,
-        WHATS_APP_LINK: process.env.WHATS_APP_LINK
+        WHATS_APP_LINK: process.env.WHATS_APP_LINK,
+        REGISTER_LINK: process.env.REGISTER_LINK
     },
+
     webpack: (config) => {
         config.plugins.push(
             new StylelintWebpackPlugin({

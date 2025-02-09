@@ -51,6 +51,10 @@
         background-color: $white;
     }
 
+    span {
+        max-width: $point * 41.5;
+    }
+
     @media all and (width <= $screen-lg) {
         margin: $point * 7;
         margin-bottom: $point * 12;
@@ -71,6 +75,8 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: $point * 4;
+        margin: 0;
+        margin-bottom: $point * 6;
 
         &::after {
             content: '';

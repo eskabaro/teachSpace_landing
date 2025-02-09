@@ -10,48 +10,48 @@ import s from './WhyUs.module.scss'
 const items = [
     {
         icon: 'message-outline',
-        title: 'Custom Materials',
-        subTitle: 'Quickly design lesson materials tailored to your needs with AI support.'
+        title: 'AI Homework Review',
+        subTitle: 'Quickly and accurately check homework with AI, saving time and improving feedback quality.'
     },
-    {
-        icon: 'copy-outline',
-        title: '17 Templates',
-        subTitle: 'Select from 17 types of templates for diverse lesson formats.'
-    },
-
     {
         icon: 'pdf-outline',
         title: 'Simple Export to PDF',
-        subTitle: 'Easily download completed materials in PDF format for convenient sharing.'
+        subTitle: 'Easily download completed materials in PDF format for convenient sharing or use during lessons.'
+    },
+
+    {
+        icon: 'copy-outline',
+        title: '21 Templates',
+        subTitle: 'Create a variety of materials suitable for both lessons and homework assignments.'
     },
     {
-        icon: 'tag-outline',
-        title: 'Fast, Free, and Easy',
-        subTitle: 'Generate high-quality materials for free in just a few clicks.'
+        icon: 'status-up',
+        title: 'Lesson Tracking',
+        subTitle: 'Conveniently manage scheduled lessons and reschedule them if needed.'
     },
     {
-        icon: 'edit-outline',
-        title: 'Personalized Plans',
-        subTitle: 'Creates a custom plan for each student based on their info and goals.'
+        icon: 'magicpen',
+        title: 'AI Customizable Learning Plan',
+        subTitle: 'Automatically generate and customize learning plans tailored to each student’s goals and progress.'
     },
     {
-        icon: 'export-outline',
-        title: 'Resource Upload',
-        subTitle: 'Quickly add PDFs and materials to build lessons from your resources.'
+        icon: 'user-edit',
+        title: 'Student Tests',
+        subTitle: 'Easily share tests with students and review their results in minutes.'
     }
 ]
 
 const WhyUs: FC = () => {
     return (
         <Space className={s.main} direction='vertical' gap='6' as='section' align='center' lg={{ gap: '5' }} md={{ gap: '4' }} id='why-us'>
-            <Title title='Why Choose TeachSpace?' alignCenterMd align='center' badge={{ variant: 'secondary', icon: 'message', text: 'Why us?' }} />
+            <Title title='Why Choose Tutory?' alignCenterMd align='center' badge={{ variant: 'secondary', icon: 'message', text: 'Why us?' }} />
             <div className={s.main_content}>
                 <Each
                     of={items}
                     render={(item) => (
                         <Space className={s.item} direction='vertical' gap='6'>
                             <div className={s.item_icon}>
-                                <Icon name={item.icon as IconsType} width={22} height={22} color='primary500' />
+                                <Icon name={item.icon as IconsType} width={24} height={24} color='primary500' />
                             </div>
 
                             <Space direction='vertical' gap='3'>

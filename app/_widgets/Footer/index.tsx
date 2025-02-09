@@ -14,19 +14,26 @@ const Footer: FC = () => {
             <Space direction='vertical' gap='6' justify='center' w='50p' lg={{ gap: '3', w: '100p' }}>
                 <Logo width={200} />
                 <Text as='h1' size='32' lgSize='28' mdSize='24' weight='700' lineHeight='120'>
-                    Focus on Students, Not on Routine
+                    Focus on Students, <br /> Not on Routine
                 </Text>
             </Space>
-            <Space direction='vertical' gap='6'>
-                <Button as={Link} href={links.contactUs} iconColor='neutral300' leftIcon='arrow-left' variant='transparent'>
-                    Telegram
-                </Button>
-                <Button as={Link} href={links.whatsApp} iconColor='neutral300' leftIcon='arrow-left' variant='transparent'>
-                    WhatsApp
-                </Button>
-                <Button as={Link} href={links.bookCall} iconColor='neutral300' leftIcon='arrow-left' variant='transparent'>
-                    Book a call
-                </Button>
+            <Space className={s.footer_links} direction='horizontal' justify='between'>
+                <Space direction='vertical' justify='center' gap='6'>
+                    <Button as={Link} href={links.register} iconColor='neutral300' leftIcon='arrow-left' variant='transparent'>
+                        Sign up
+                    </Button>
+                </Space>
+                <Space direction='vertical' gap='6'>
+                    <Button as={Link} href={links.contactUs} iconColor='neutral300' leftIcon='arrow-left' variant='transparent'>
+                        Telegram
+                    </Button>
+                    <Button as={Link} href={links.whatsApp} iconColor='neutral300' leftIcon='arrow-left' variant='transparent'>
+                        WhatsApp
+                    </Button>
+                    <Button as={Link} href={links.bookCall} iconColor='neutral300' leftIcon='arrow-left' variant='transparent'>
+                        Book a call
+                    </Button>
+                </Space>
             </Space>
         </footer>
     )

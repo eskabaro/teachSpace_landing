@@ -6,6 +6,12 @@
     gap: $point * 20;
     padding-block: $point * 20;
 
+    .footer_links {
+        @media all and (width >= $screen-xl) {
+            padding-right: $point * 25;
+        }
+    }
+
     @media all and (width <= $screen-lg) {
         padding-block: $point * 12;
     }
