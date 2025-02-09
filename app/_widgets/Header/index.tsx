@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import type { FC } from 'react'
 import { links } from '@shared/const/links'
+import { handleRedirectWithGTM } from '@shared/lib/utils/gtmRedirect'
 import { useMenuContext } from '@shared/providers/MenuDrawerProvider'
 import Button from '@shared/ui/Button'
 import Flex from '@shared/ui/Flex'
@@ -19,8 +20,8 @@ const Header: FC = () => {
             <Space className={s.header_menu} direction='horizontal'>
                 <MenuLinks />
             </Space>
-            <Button as={Link} href={links.contactUs} className={s.header_btn}>
-                Contact us
+            <Button onClick={() => handleRedirectWithGTM(links.register)} className={s.header_btn}>
+                Sign up
             </Button>
             <Button className={s.header_burger} onClick={() => setIsOpen(true)} variant='transparent' mode='icon' icon='burger' />
         </Flex>

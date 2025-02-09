@@ -1,5 +1,6 @@
 import { useState, type FC } from 'react'
 import { links } from '@shared/const/links'
+import { handleRedirectWithGTM } from '@shared/lib/utils/gtmRedirect'
 import Button from '@shared/ui/Button'
 import { VerticalFlex } from '@shared/ui/Flex'
 import PlanCard from '@shared/ui/PlanCard'
@@ -19,7 +20,7 @@ const Plan: FC = () => {
     }
 
     return (
-        <VerticalFlex className={s.main} as='section' gap='6' id='features'>
+        <VerticalFlex className={s.main} as='section' gap='6' id='pricing'>
             <Title className={s.main_title} title={'Choose Your Perfect Subscription Plan'} alignCenterMd align='center' badge={{ variant: 'secondary', icon: 'crown', text: 'Plan' }} />
             <div className={s.main_content}>
                 <SwitchButtons
@@ -47,6 +48,7 @@ const Plan: FC = () => {
                         buttonText='Get Started'
                         buttonVariant='primary'
                         icon='award'
+                        buttonOnClick={() => handleRedirectWithGTM(links.register)}
                     />
                     <PlanCard
                         title='Premium'
@@ -57,12 +59,11 @@ const Plan: FC = () => {
                         buttonText='Start 7-day free trial'
                         buttonVariant='primary'
                         icon='crown'
+                        buttonOnClick={() => handleRedirectWithGTM(links.register)}
                     />
                 </Space>
             </div>
         </VerticalFlex>
-
-
     )
 }
 
