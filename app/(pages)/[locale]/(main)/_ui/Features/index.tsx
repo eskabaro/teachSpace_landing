@@ -1,6 +1,6 @@
-import Link from 'next/link'
 import type { FC } from 'react'
 import { links } from '@shared/const/links'
+import { handleRedirectWithGTM } from '@shared/lib/utils/gtmRedirect'
 import Badge from '@shared/ui/Badge'
 import Button from '@shared/ui/Button'
 import { VerticalFlex } from '@shared/ui/Flex'
@@ -33,7 +33,7 @@ const Features: FC = () => {
                                 time and focus on teaching.
                             </Text>
                         </Space>
-                        <Button as={Link} href={links.register} icon='arrow-left'>
+                        <Button onClick={() => handleRedirectWithGTM(links.register)} icon='arrow-left'>
                             Get Started
                         </Button>
                     </Space>
@@ -70,7 +70,7 @@ const Features: FC = () => {
                                 that fit their teaching style.
                             </Text>
                         </Space>
-                        <Button as={Link} href={links.register} icon='arrow-left'>
+                        <Button onClick={() => handleRedirectWithGTM(links.register)} icon='arrow-left'>
                             Get Started
                         </Button>
                     </Space>

@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import type { FC } from 'react'
 import { links } from '@shared/const/links'
+import { handleRedirectWithGTM } from '@shared/lib/utils/gtmRedirect'
 import Button from '@shared/ui/Button'
 import Logo from '@shared/ui/Logo'
 import Space from '@shared/ui/Space'
@@ -19,7 +20,7 @@ const Footer: FC = () => {
             </Space>
             <Space className={s.footer_links} direction='horizontal' justify='between'>
                 <Space direction='vertical' justify='center' gap='6'>
-                    <Button as={Link} href={links.register} iconColor='neutral300' leftIcon='arrow-left' variant='transparent'>
+                    <Button onClick={() => handleRedirectWithGTM(links.register)} iconColor='neutral300' leftIcon='arrow-left' variant='transparent'>
                         Sign up
                     </Button>
                 </Space>

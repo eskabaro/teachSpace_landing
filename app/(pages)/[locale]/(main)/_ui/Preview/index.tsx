@@ -4,6 +4,7 @@ import type { FC } from 'react'
 import type { IconsType } from '@shared/const/icons'
 import { links } from '@shared/const/links'
 import classnames from '@shared/lib/classnames'
+import { handleRedirectWithGTM } from '@shared/lib/utils/gtmRedirect'
 import Button from '@shared/ui/Button'
 import Each from '@shared/ui/Each'
 import Flex from '@shared/ui/Flex'
@@ -63,9 +64,7 @@ const Preview: FC = () => {
                         </Text>
                         <Badge />
                     </Space>
-                    <Button as={Link} href={links.register}>
-                        Get started for free
-                    </Button>
+                    <Button onClick={() => handleRedirectWithGTM(links.register)}>Get started for free</Button>
                 </Space>
                 <ResponsiveImage desktop={{ classNameBlock: s.preview, src: macbookImg, alt: '', placeholder: 'empty', loading: 'eager' }} mobile={{ classNameBlock: s.preview, src: phonesImg, alt: '', placeholder: 'empty', loading: 'eager' }} />
                 <Space className={s.list} gap='6' lg={{ gap: '5' }} direction='horizontal' justify='center' as='ul'>
