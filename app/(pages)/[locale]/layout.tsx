@@ -1,3 +1,4 @@
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 import { Nunito } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 import { type ReactNode } from 'react'
@@ -49,6 +50,10 @@ const layout = async ({ children, params: { locale = 'en' } }: Props) => {
 
     return (
         <html lang={locale} suppressHydrationWarning>
+            <head>
+                <GoogleAnalytics gaId='G-FLSXVFFL3W' />
+                <GoogleTagManager gtmId='GTM-K5GFLQJ4' />
+            </head>
             <body className={nunito.className}>
                 <NextIntlClientProvider locale={locale} messages={messages}>
                     <TranslationProvider />
