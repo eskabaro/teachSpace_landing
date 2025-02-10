@@ -1,0 +1,57 @@
+@import '/app/_shared/const/variables';
+
+.main {
+    display: flex;
+    gap: $point;
+    align-items: center;
+    width: fit-content;
+    height: $point * 12;
+    padding: $point;
+    background-color: $neutral50;
+    border: 1px solid $neutral25;
+    border-radius: $point * 2;
+
+    &.full {
+        > button,
+        & {
+            width: 100%;
+        }
+    }
+
+    &_button {
+        @include flexHorizontalSpace(1);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: $point * 23;
+        height: 100%;
+        padding: $point * 1.5 $point * 4;
+        border-radius: $point;
+        font-weight: 500;
+        color: $neutral300;
+        text-wrap: nowrap;
+        transition: all $transition;
+
+        &.active {
+            background-color: $white;
+            color: $neutral900;
+        }
+
+        @media (any-hover: hover) {
+            &:hover:not(.active) {
+                color: $neutral500;
+            }
+        }
+    }
+
+    @media (max-width: $screen-md) {
+        width: 100%;
+
+        &_button {
+            justify-content: center;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

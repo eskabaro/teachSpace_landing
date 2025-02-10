@@ -14,7 +14,7 @@ interface Props {
 const Logo: FC<Props> = ({ onClick, width = 140, height = 48, className }) => {
     return (
         <Link href={'/'} className={classnames('hover-opacity', className)} onClick={onClick}>
-            <Image src={LogoImg} width={width} height={height} priority quality={100} alt='TeachSpace Logo' />
+            <Image src={LogoImg} width={width} height={height} priority quality={100} alt='Tutory Logo' />
         </Link>
     )
 }

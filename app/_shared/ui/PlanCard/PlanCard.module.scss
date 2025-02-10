@@ -1,0 +1,116 @@
+@import '/app/_shared/const/variables';
+
+.planCard {
+    position: relative;
+    z-index: 0;
+    gap: $point * 6;
+    width: 100%;
+    max-width: $point * 134;
+    padding: $point * 12;
+    background-color: $white;
+    border: 1px solid $neutral100;
+    border-radius: $point * 6;
+
+    @media (max-width: $screen-xl) {
+        gap: $point * 4;
+        padding: $point * 6;
+    }
+
+    @media (max-width: $screen-md) {
+        padding: $point * 4;
+    }
+}
+
+.planCard_icon_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $point * 16;
+    height: $point * 16;
+    padding: $point * 2;
+    background-color: $primary50;
+    border-radius: $point * 2;
+}
+
+.planCard_icon {
+    width: $point * 12;
+    height: $point * 12;
+    color: $primary500;
+}
+
+.planCard_title_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $point * 4;
+}
+
+.planCard_title_wrapper_content {
+    display: flex;
+    flex-direction: column;
+    gap: $point * 4;
+    justify-content: space-between;
+}
+
+.planCard_divider {
+    width: 100%;
+    height: 1px;
+    background-color: $neutral100;
+}
+
+.planCard_features {
+    display: flex;
+    flex-direction: column;
+    gap: $point * 4;
+
+    @media (max-width: $screen-md) {
+        gap: $point * 2;
+    }
+}
+
+.planCard_features_icon {
+    color: $success500;
+}
+
+.planCard_features_text {
+    font-size: 16px;
+}
+
+.planCard_title_content_text {
+    display: flex;
+    flex-direction: column;
+    gap: $point * 2;
+    justify-content: center;
+
+    & h4 {
+        line-height: 1.2;
+
+        @media (max-width: $screen-xl) {
+            font-size: 20px;
+            line-height: 1.4;
+        }
+
+        @media (max-width: $screen-md) {
+            font-size: 18px;
+        }
+    }
+
+    & p {
+        line-height: 1.6;
+
+        @media (max-width: $screen-md) {
+            font-size: 12px;
+        }
+
+        @media (max-width: $screen-lg) {
+            min-height: $point * 11;
+        }
+    }
+
+    @media (max-width: $screen-xl) {
+        gap: $point * 1;
+    }
+
+    @media (max-width: $screen-md) {
+        gap: 0;
+    }
+}

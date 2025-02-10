@@ -1,3 +1,4 @@
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 import { Nunito } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 import { type ReactNode } from 'react'
@@ -12,14 +13,14 @@ const nunito = Nunito({ subsets: ['latin'], weight: ['400', '500', '600', '700']
 
 export const generateMetadata: GenerateMetadataType = ({ params }) => ({
     metadataBase: new URL(`https://teach-space.co/${params.locale}`),
-    title: 'TeachSpace - Платформа для професійних репетиторів',
+    title: 'Tutory - Платформа для професійних репетиторів',
     description: 'Ми створюємо рішення, яке підвищить вашу продуктивність та допоможе вам викладати на професійному рівні',
-    keywords: 'TeachSpace, репетиторство, онлайн-репетиторство, платформа для репетиторів, платформа для вчителів, платформа для викладачів',
+    keywords: 'Tutory, репетиторство, онлайн-репетиторство, платформа для репетиторів, платформа для вчителів, платформа для викладачів',
     openGraph: {
-        title: 'TeachSpace - Платформа для професійних репетиторів',
+        title: 'Tutory - Платформа для професійних репетиторів',
         description: 'Ми створюємо рішення, яке підвищить вашу продуктивність та допоможе вам викладати на професійному рівні',
         url: 'https://teach-space.co',
-        siteName: 'TeachSpace - Платформа для професійних репетиторів',
+        siteName: 'Tutory - Платформа для професійних репетиторів',
         images: [
             {
                 url: 'https://teach-space.co/opengraph-image.png',
@@ -50,7 +51,11 @@ const layout = async ({ children, params: { locale = 'en' } }: Props) => {
 
     return (
         <html lang={locale} suppressHydrationWarning>
-            <GoogleAnalyticsProvider />
+            <head>
+                <GoogleAnalytics gaId='G-WR4XD8CHSH' />
+                <GoogleTagManager gtmId='GTM-K5GFLQJ4' /> 
+            </head>
+            {/* <GoogleAnalyticsProvider /> */}
             <body className={nunito.className}>
                 <NextIntlClientProvider locale={locale} messages={messages}>
                     <TranslationProvider />

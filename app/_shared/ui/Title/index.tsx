@@ -12,16 +12,24 @@ import s from './Title.module.scss'
 interface Props extends PropsWithChildren<unknown>, BaseUiType {
     badge: BadgeProps
     title: string
+    secondTitle?: string
     titleColor?: ColorsType
     alignCenterMd?: boolean
+    className?: string
 }
 
-const Title: FC<Props> = ({ badge, title, children, titleColor, alignCenterMd, ...rest }) => {
+const Title: FC<Props> = ({ badge, title, children, titleColor, alignCenterMd, className, secondTitle, ...rest }) => {
     return (
-        <Space direction='vertical' gap='3' {...rest}>
+        <Space direction='vertical' gap='3' className={className} {...rest}>
             <Badge {...badge} />
             <Text className={classnames(alignCenterMd && s.alignCenter)} size='32' lgSize='28' mdSize='24' weight='700' lineHeight='120' color={titleColor}>
                 {title}
+                {secondTitle && (
+                    <>
+                        <br />
+                        {secondTitle}
+                    </>
+                )}
             </Text>
             {children}
         </Space>

@@ -13,7 +13,7 @@
         "logout": "Log out"
     },
     "AuthLayout": {
-        "text": "TeachSpace has completely transformed the way I plan and manage my lessons. The AI-generated suggestions save me hours each week, and the student tracking helps me stay on top of individual progress. It's like having an extra assistant in the classroom!",
+        "text": "Tutory has completely transformed the way I plan and manage my lessons. The AI-generated suggestions save me hours each week, and the student tracking helps me stay on top of individual progress. It's like having an extra assistant in the classroom!",
         "author": {
             "name": "— Sarah M.",
             "info": "5th Grade Teacher"
@@ -288,7 +288,7 @@
                 "vocabulary": {
                     "title": "Essential vocabulary on the topic",
                     "subTitle": "Essential Vocabulary",
-                    "description": "Suggests a list of essential vocabulary items for the chosen topic. Use this list in the other TeachSpace tools to create a variety of exercises for your lesson."
+                    "description": "Suggests a list of essential vocabulary items for the chosen topic. Use this list in the other Tutory tools to create a variety of exercises for your lesson."
                 },
                 "matching": {
                     "title": "Create a matching exercise word-definition",

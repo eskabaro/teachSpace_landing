@@ -19,7 +19,7 @@ const items = [
     },
     {
         title: 'Add your students',
-        subTitle: 'Add student info, set levels, and upload PDFs. TeachSpace will create a personalized learning plan automatically.',
+        subTitle: 'Add student info, set levels, and upload PDFs. Tutory will create a personalized learning plan automatically.',
         img: calendarImg
     },
     {

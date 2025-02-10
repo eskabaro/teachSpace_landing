@@ -1,0 +1,56 @@
+@import '/app/_shared/const/variables';
+
+.main {
+    padding-block: $point * 20;
+
+    &_title p {
+        max-width: $point * 80;
+        text-align: center;
+
+        @media all and (width <= $screen-lg) {
+            max-width: $point * 70;
+        }
+
+        @media all and (width <= $screen-md) {
+            max-width: $point * 60;
+        }
+    }
+
+    &_content {
+        display: flex;
+        flex-direction: column;
+        gap: $point * 6;
+        align-items: center;
+        justify-content: center;
+
+        &_switch {
+            max-width: $point * 50;
+        }
+
+        &_cards {
+            display: flex;
+            flex-direction: row;
+            gap: $point * 6;
+            justify-content: center;
+            width: 100%;
+
+            @media all and (width <= $screen-md) {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+    @media all and (width <= $screen-lg) {
+        gap: $point * 4;
+        padding-block: $point * 12;
+
+        &_content {
+            gap: $point * 4;
+        }
+    }
+
+    @media all and (width <= $screen-md) {
+        padding-block: $point * 6;
+    }
+}
