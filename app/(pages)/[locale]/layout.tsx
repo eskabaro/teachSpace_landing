@@ -7,6 +7,7 @@ import getMessagesOnServerSide from '@shared/lib/getMessagesOnServerSide'
 import type { GenerateMetadataType } from '@shared/lib/types/metadata'
 import { TranslationProvider } from '@shared/providers'
 import '@app/_styles/global.scss'
+import GoogleAnalyticsProvider from '@shared/providers/GoogleAnalyticsProvider'
 
 const nunito = Nunito({ subsets: ['latin'], weight: ['400', '500', '600', '700'] })
 
@@ -51,9 +52,10 @@ const layout = async ({ children, params: { locale = 'en' } }: Props) => {
     return (
         <html lang={locale} suppressHydrationWarning>
             <head>
-                <GoogleAnalytics gaId='G-FLSXVFFL3W' />
+                <GoogleAnalytics gaId='G-WR4XD8CHSH' />
                 <GoogleTagManager gtmId='GTM-K5GFLQJ4' />
             </head>
+            <GoogleAnalyticsProvider />
             <body className={nunito.className}>
                 <NextIntlClientProvider locale={locale} messages={messages}>
                     <TranslationProvider />
