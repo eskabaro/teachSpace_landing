@@ -50,7 +50,7 @@ const ProblemsSolve: FC = () => {
                             )}
                             body={() => (
                                 <Text size='16' lineHeight='160'>
-                                    With TeachSpace, you can effortlessly generate AI-powered materials in just minutes, perfect for lessons or independent practice. Easily export them as PDFs or publish them online to share with your students.
+                                    With Tutory, you can effortlessly generate AI-powered materials in just minutes, perfect for lessons or independent practice. Easily export them as PDFs or publish them online to share with your students.
                                 </Text>
                             )}
                         />

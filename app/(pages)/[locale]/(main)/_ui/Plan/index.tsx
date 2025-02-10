@@ -41,7 +41,7 @@ const Plan: FC = () => {
                 <Space className={s.main_content_cards}>
                     <PlanCard
                         title='Basic'
-                        description='Access to the basic TeachSpace features'
+                        description='Access to the basic Tutory features'
                         price={0}
                         features={['5 Listening activities in a day', '10 Text activities in a day', '5 students']}
                         period={planDuration === 'Monthly' ? '/ Month' : '/ Year'}

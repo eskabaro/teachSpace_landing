@@ -60,7 +60,7 @@ const Preview: FC = () => {
                             Focus on Students, Not on Routine
                         </Title>
                         <Text size='18' lgSize='16' mdSize='14' lineHeight='140' color='neutral600' align='center'>
-                            TeachSpace allows you to dedicate more time to your students by saving time on lesson planning, creating homework assignments, and preparing materials for lesson
+                            Tutory allows you to dedicate more time to your students by saving time on lesson planning, creating homework assignments, and preparing materials for lesson
                         </Text>
                         <Badge />
                     </Space>
