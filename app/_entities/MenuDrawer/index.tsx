@@ -21,10 +21,10 @@ const MenuDrawer: FC = () => {
                 <Space w='100p' direction='vertical' gap='2'>
                     <div className={s.divider} />
                     <Space className={s.menu_drawer_body} direction='vertical' gap='2'>
-                        <MenuLink text={t('whyUs')} href={routes.whyUs} />
-                        <MenuLink text={t('features')} href={routes.features} />
-                        <MenuLink text={t('pricing')} href={routes.pricing} />
-                        <MenuLink text={t('joinUs')} href={routes.joinUs} />
+                        <MenuLink onClick={() => setIsOpen(false)} text={t('whyUs')} href={routes.whyUs} />
+                        <MenuLink onClick={() => setIsOpen(false)} text={t('features')} href={routes.features} />
+                        <MenuLink onClick={() => setIsOpen(false)} text={t('pricing')} href={routes.pricing} />
+                        <MenuLink onClick={() => setIsOpen(false)} text={t('joinUs')} href={routes.joinUs} />
                         <MenuLink text={t('telegram')} href={links.contactUs} />
                         <MenuLink text={t('whatsApp')} href={links.whatsApp} />
                         <MenuLink text={t('bookCall')} href={links.bookCall} />

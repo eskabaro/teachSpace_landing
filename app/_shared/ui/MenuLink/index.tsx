@@ -13,8 +13,15 @@ interface Props {
 }
 
 const MenuLink: FC<Props> = ({ href, text, onClick }) => {
+
+    const handleClick = () => {
+        if (onClick) {
+            onClick()
+        }
+    }
+
     return (
-        <Text as={Link} className={classnames(s.link, href)} href={href} color='neutral400' weight='500' lineHeight='120' type='button' onClick={onClick}>
+        <Text as={Link} className={classnames(s.link, href)} href={href} color='neutral400' weight='500' lineHeight='120' type='button' onClick={handleClick}>
             {text}
         </Text>
     )
