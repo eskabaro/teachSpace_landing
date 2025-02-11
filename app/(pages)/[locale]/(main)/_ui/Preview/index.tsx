@@ -12,9 +12,8 @@ import Icon from '@shared/ui/Icon'
 import ResponsiveImage from '@shared/ui/ResponsiveImage'
 import Space from '@shared/ui/Space'
 import Text, { Title } from '@shared/ui/Typography'
-import macbookImg from './assets/macbook.png'
+import VideoWrapper from '@shared/ui/VideoWrapper'
 import mobileBgImg from './assets/mobile-bg.png'
-import phonesImg from './assets/phones.png'
 import bgImg from './assets/preview-bg.png'
 import tabletBgImg from './assets/tablet-bg.png'
 import s from './Preview.module.scss'
@@ -53,6 +52,7 @@ const Preview: FC = () => {
                 tablet={{ classNameBlock: s.main_bg, src: tabletBgImg, quality: 100, priority: true, alt: '', placeholder: 'blur' }}
                 mobile={{ classNameBlock: s.main_bg, src: mobileBgImg, quality: 100, priority: true, alt: '', placeholder: 'blur' }}
             />
+
             <Space direction='vertical' align='center' w='100p' gap='12' lg={{ gap: '5' }}>
                 <Space direction='vertical' gap='6' align='center' lg={{ gap: '5' }}>
                     <Space className={s.title} direction='vertical' gap='3'>
@@ -66,7 +66,7 @@ const Preview: FC = () => {
                     </Space>
                     <Button onClick={() => handleRedirectWithGTM(links.register)}>Get started for free</Button>
                 </Space>
-                <ResponsiveImage desktop={{ classNameBlock: s.preview, src: macbookImg, alt: '', placeholder: 'empty', loading: 'eager' }} mobile={{ classNameBlock: s.preview, src: phonesImg, alt: '', placeholder: 'empty', loading: 'eager' }} />
+                <VideoWrapper videoId='UvzIhvdLpls' />
                 <Space className={s.list} gap='6' lg={{ gap: '5' }} direction='horizontal' justify='center' as='ul'>
                     <Each
                         of={list}
