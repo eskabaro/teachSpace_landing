@@ -9,7 +9,7 @@ import Title from '@shared/ui/Title'
 import Text from '@shared/ui/Typography'
 import phonesMobileImg from './assets/phones-mobile.png'
 import phonesImg from './assets/phones.png'
-import shotImg from './assets/Shot.png'
+import shotImg from './assets/shot.png'
 import s from './JoinUs.module.scss'
 
 const list = ['Early access to all platform features', 'Opportunity to share your insights and suggestions', 'Help improve the platform for a better user experience']
