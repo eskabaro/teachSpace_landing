@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 import { useState, type FC } from 'react'
 import Accordion from '@shared/ui/Accordion'
 import { VerticalFlex } from '@shared/ui/Flex'
@@ -30,6 +31,7 @@ const imagesMobile = {
 }
 
 const ProblemsSolve: FC = () => {
+    const t = useTranslations('ProblemsSolve')
     const [activeId, setActiveId] = useState<'1' | '2' | '3'>('1')
 
     return (
@@ -45,12 +47,12 @@ const ProblemsSolve: FC = () => {
                             setActiveId={setActiveId}
                             header={() => (
                                 <Text size='22' lgSize='20' mdSize='18' weight='600' lineHeight='120'>
-                                    Speed up lesson preparation and homework creation.
+                                    {t('accordion.0.title')}
                                 </Text>
                             )}
                             body={() => (
                                 <Text size='16' lineHeight='160'>
-                                    With Tutory, you can effortlessly generate AI-powered materials in just minutes, perfect for lessons or independent practice. Easily export them as PDFs or publish them online to share with your students.
+                                    {t('accordion.0.description')}
                                 </Text>
                             )}
                         />
@@ -61,12 +63,12 @@ const ProblemsSolve: FC = () => {
                             setActiveId={setActiveId}
                             header={() => (
                                 <Text size='22' lgSize='20' mdSize='18' weight='600' lineHeight='120'>
-                                    Automates homework checking with AI.
+                                    {t('accordion.1.title')}
                                 </Text>
                             )}
                             body={() => (
                                 <Text size='16' lineHeight='160'>
-                                    After homework is completed, AI reviews all tasks without predefined correct answers within minutes.{' '}
+                                    {t('accordion.1.description')}
                                 </Text>
                             )}
                         />
@@ -77,13 +79,12 @@ const ProblemsSolve: FC = () => {
                             setActiveId={setActiveId}
                             header={() => (
                                 <Text size='22' lgSize='20' mdSize='18' weight='600' lineHeight='120'>
-                                    Lesson planning and schedule tracking.
+                                    {t('accordion.2.title')}
                                 </Text>
                             )}
                             body={() => (
                                 <Text size='16' lineHeight='160'>
-                                    Our platform enables you to create personalized learning plans tailored to each student’s goals, all done automatically to meet their unique needs. Additionally, you can customize the program and track scheduled
-                                    lessons with ease.
+                                    {t('accordion.2.description')}
                                 </Text>
                             )}
                         />

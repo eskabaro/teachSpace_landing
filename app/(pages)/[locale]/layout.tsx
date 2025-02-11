@@ -53,7 +53,7 @@ const layout = async ({ children, params: { locale = 'en' } }: Props) => {
         <html lang={locale} suppressHydrationWarning>
             <head>
                 <GoogleAnalytics gaId='G-WR4XD8CHSH' />
-                <GoogleTagManager gtmId='GTM-K5GFLQJ4' /> 
+                <GoogleTagManager gtmId='GTM-K5GFLQJ4' />
             </head>
             {/* <GoogleAnalyticsProvider /> */}
             <body className={nunito.className}>

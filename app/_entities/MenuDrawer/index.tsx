@@ -1,5 +1,6 @@
 'use client'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 import type { FC } from 'react'
 import { links } from '@shared/const/links'
 import { routes } from '@shared/const/routes'
@@ -10,6 +11,7 @@ import Drawer from '@shared/ui/Drawer'
 import Space from '@shared/ui/Space'
 
 const MenuDrawer: FC = () => {
+    const t = useTranslations('MenuDrawer')
     const { isOpen, setIsOpen } = useMenuContext()
 
     return (
@@ -18,28 +20,28 @@ const MenuDrawer: FC = () => {
             <Drawer.Body>
                 <Space direction='vertical' gap='6'>
                     <Button as={Link} href={routes.whyUs} leftIcon='arrow-left' variant='transparent'>
-                        Why choose us
+                        {t('whyUs')}
                     </Button>
                     <Button as={Link} href={routes.features} leftIcon='arrow-left' variant='transparent'>
-                        Features
+                        {t('features')}
                     </Button>
                     <Button as={Link} href={routes.pricing} leftIcon='arrow-left' variant='transparent'>
-                        Pricing
+                        {t('pricing')}
                     </Button>
                     <Button as={Link} href={routes.joinUs} leftIcon='arrow-left' variant='transparent'>
-                        Join us
+                        {t('joinUs')}
                     </Button>
                     <Button as={Link} href={links.contactUs} leftIcon='arrow-left' variant='transparent'>
-                        Telegram
+                        {t('telegram')}
                     </Button>
                     <Button as={Link} href={links.whatsApp} leftIcon='arrow-left' variant='transparent'>
-                        WhatsApp
+                        {t('whatsApp')}
                     </Button>
                     <Button as={Link} href={links.bookCall} leftIcon='arrow-left' variant='transparent'>
-                        Book a call
+                        {t('bookCall')}
                     </Button>
                     <Button onClick={() => handleRedirectWithGTM(links.register)} leftIcon='arrow-left' variant='transparent'>
-                        Sign up
+                        {t('signUp')}
                     </Button>
                 </Space>
             </Drawer.Body>
