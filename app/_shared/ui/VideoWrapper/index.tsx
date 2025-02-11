@@ -2,7 +2,6 @@ import type { FC } from 'react'
 import ResponsiveImage from '../ResponsiveImage'
 import Space from '../Space'
 import macbookImg from './assets/macbook.png'
-import phonesImg from './assets/phones.png'
 import s from './VideoFrame.module.scss'
 
 interface VideoFrameProps {

@@ -1,5 +1,4 @@
 import { Atma } from 'next/font/google'
-import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 import type { FC } from 'react'
 import type { IconsType } from '@shared/const/icons'
