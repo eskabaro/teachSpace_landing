@@ -11,7 +11,7 @@ interface VideoFrameProps {
 const VideoWrapper: FC<VideoFrameProps> = ({ videoId }) => {
     return (
         <Space className={s.main}>
-            <ResponsiveImage desktop={{ classNameBlock: s.preview, src: macbookImg, alt: '', placeholder: 'empty', loading: 'eager' }} mobile={{ classNameBlock: s.preview, src: macbookImg, alt: '', placeholder: 'empty', loading: 'eager' }} />
+            <ResponsiveImage desktop={{ classNameBlock: s.preview, src: macbookImg, alt: '', placeholder: 'empty', priority: true }} mobile={{ classNameBlock: s.preview, src: macbookImg, alt: '', placeholder: 'empty', priority: true }} />
             <iframe className={s.main_video} src={`https://www.youtube.com/embed/${videoId}`} allow='accelerometer; clipboard-write; encrypted-media; gyroscope' allowFullScreen />
         </Space>
     )

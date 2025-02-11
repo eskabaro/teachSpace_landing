@@ -1,5 +1,6 @@
 export const locales = {
-    en: 'English'
+    en: 'English',
+    ua: 'Українська',
 } as const
 export type LocaleType = keyof typeof locales
 

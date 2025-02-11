@@ -47,7 +47,7 @@ const WhyUs: FC = () => {
 
     return (
         <Space className={s.main} direction='vertical' gap='6' as='section' align='center' lg={{ gap: '5' }} md={{ gap: '4' }} id='why-us'>
-            <Title title='Why Choose Tutory?' alignCenterMd align='center' badge={{ variant: 'secondary', icon: 'message', text: 'Why us?' }} />
+            <Title title={t('title')} alignCenterMd align='center' badge={{ variant: 'secondary', icon: 'message', text: 'Why us?' }} />
             <div className={s.main_content}>
                 <Each
                     of={items}
