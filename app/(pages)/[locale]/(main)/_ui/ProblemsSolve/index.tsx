@@ -38,7 +38,7 @@ const ProblemsSolve: FC = () => {
         <section className={s.main} id='problems-solve'>
             <Image className={s.main_bgTop} src={topBgImg} width={1320} height={710} alt='Background' />
             <VerticalFlex className={s.main_content} gap='12'>
-                <Title title='What Problems We Solve' badge={{ variant: 'primary', icon: 'check', text: 'Problems solve' }} />
+                <Title title={t('title')} badge={{ variant: 'primary', icon: 'check', text: 'Problems solve' }} />
                 <div className={s.content}>
                     <Space h='100p' direction='vertical' gap='6' justify='between' lg={{ justify: 'start', gap: '5' }}>
                         <Accordion
