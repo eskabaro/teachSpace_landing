@@ -10,7 +10,7 @@ import Title from '@shared/ui/Title'
 import Text from '@shared/ui/Typography'
 import phonesMobileImg from './assets/phones-mobile.png'
 import phonesImg from './assets/phones.png'
-import shotImg from './assets/shot.png'
+import shotImg from './assets/Shot.png'
 import s from './JoinUs.module.scss'
 
 const JoinUs: FC = () => {
