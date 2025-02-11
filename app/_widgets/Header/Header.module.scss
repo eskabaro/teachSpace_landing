@@ -62,11 +62,6 @@
 
         &_logo {
             order: 1;
-
-            > img {
-                width: $point * 33;
-                height: $point * 8;
-            }
         }
     }
 }

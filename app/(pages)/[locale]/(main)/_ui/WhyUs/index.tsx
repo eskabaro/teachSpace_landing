@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl'
 import type { FC } from 'react'
 import type { IconsType } from '@shared/const/icons'
 import Each from '@shared/ui/Each'
@@ -7,44 +8,46 @@ import Title from '@shared/ui/Title'
 import Text from '@shared/ui/Typography'
 import s from './WhyUs.module.scss'
 
-const items = [
-    {
-        icon: 'message-outline',
-        title: 'AI Homework Review',
-        subTitle: 'Quickly and accurately check homework with AI, saving time and improving feedback quality.'
-    },
-    {
-        icon: 'pdf-outline',
-        title: 'Simple Export to PDF',
-        subTitle: 'Easily download completed materials in PDF format for convenient sharing or use during lessons.'
-    },
-
-    {
-        icon: 'copy-outline',
-        title: '21 Templates',
-        subTitle: 'Create a variety of materials suitable for both lessons and homework assignments.'
-    },
-    {
-        icon: 'status-up',
-        title: 'Lesson Tracking',
-        subTitle: 'Conveniently manage scheduled lessons and reschedule them if needed.'
-    },
-    {
-        icon: 'magicpen',
-        title: 'AI Customizable Learning Plan',
-        subTitle: 'Automatically generate and customize learning plans tailored to each student’s goals and progress.'
-    },
-    {
-        icon: 'user-edit',
-        title: 'Student Tests',
-        subTitle: 'Easily share tests with students and review their results in minutes.'
-    }
-]
-
 const WhyUs: FC = () => {
+    const t = useTranslations('WhyUs')
+
+    const items = [
+        {
+            icon: 'message-outline',
+            title: t('items.0.title'),
+            subTitle: t('items.0.subTitle')
+        },
+        {
+            icon: 'pdf-outline',
+            title: t('items.1.title'),
+            subTitle: t('items.1.subTitle')
+        },
+
+        {
+            icon: 'copy-outline',
+            title: t('items.2.title'),
+            subTitle: t('items.2.subTitle')
+        },
+        {
+            icon: 'status-up',
+            title: t('items.3.title'),
+            subTitle: t('items.3.subTitle')
+        },
+        {
+            icon: 'magicpen',
+            title: t('items.4.title'),
+            subTitle: t('items.4.subTitle')
+        },
+        {
+            icon: 'user-edit',
+            title: t('items.5.title'),
+            subTitle: t('items.5.subTitle')
+        }
+    ]
+
     return (
         <Space className={s.main} direction='vertical' gap='6' as='section' align='center' lg={{ gap: '5' }} md={{ gap: '4' }} id='why-us'>
-            <Title title='Why Choose Tutory?' alignCenterMd align='center' badge={{ variant: 'secondary', icon: 'message', text: 'Why us?' }} />
+            <Title title={t('title')} alignCenterMd align='center' badge={{ variant: 'secondary', icon: 'message', text: 'Why us?' }} />
             <div className={s.main_content}>
                 <Each
                     of={items}

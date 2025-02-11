@@ -1,46 +1,35 @@
 'use client'
-import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 import type { FC } from 'react'
 import { links } from '@shared/const/links'
 import { routes } from '@shared/const/routes'
 import { handleRedirectWithGTM } from '@shared/lib/utils/gtmRedirect'
 import { useMenuContext } from '@shared/providers/MenuDrawerProvider'
-import Button from '@shared/ui/Button'
 import Drawer from '@shared/ui/Drawer'
+import MenuLink from '@shared/ui/MenuLink'
 import Space from '@shared/ui/Space'
+import s from './MenuDrawer.module.scss'
 
 const MenuDrawer: FC = () => {
+    const t = useTranslations('MenuDrawer')
     const { isOpen, setIsOpen } = useMenuContext()
 
     return (
         <Drawer isOpen={isOpen} close={() => setIsOpen(false)}>
             <Drawer.Header close={() => setIsOpen(false)} />
             <Drawer.Body>
-                <Space direction='vertical' gap='6'>
-                    <Button as={Link} href={routes.whyUs} leftIcon='arrow-left' variant='transparent'>
-                        Why choose us
-                    </Button>
-                    <Button as={Link} href={routes.features} leftIcon='arrow-left' variant='transparent'>
-                        Features
-                    </Button>
-                    <Button as={Link} href={routes.pricing} leftIcon='arrow-left' variant='transparent'>
-                        Pricing
-                    </Button>
-                    <Button as={Link} href={routes.joinUs} leftIcon='arrow-left' variant='transparent'>
-                        Join us
-                    </Button>
-                    <Button as={Link} href={links.contactUs} leftIcon='arrow-left' variant='transparent'>
-                        Telegram
-                    </Button>
-                    <Button as={Link} href={links.whatsApp} leftIcon='arrow-left' variant='transparent'>
-                        WhatsApp
-                    </Button>
-                    <Button as={Link} href={links.bookCall} leftIcon='arrow-left' variant='transparent'>
-                        Book a call
-                    </Button>
-                    <Button onClick={() => handleRedirectWithGTM(links.register)} leftIcon='arrow-left' variant='transparent'>
-                        Sign up
-                    </Button>
+                <Space w='100p' direction='vertical' gap='2'>
+                    <div className={s.divider} />
+                    <Space className={s.menu_drawer_body} direction='vertical' gap='2'>
+                        <MenuLink onClick={() => setIsOpen(false)} text={t('whyUs')} href={routes.whyUs} />
+                        <MenuLink onClick={() => setIsOpen(false)} text={t('features')} href={routes.features} />
+                        <MenuLink onClick={() => setIsOpen(false)} text={t('pricing')} href={routes.pricing} />
+                        <MenuLink onClick={() => setIsOpen(false)} text={t('joinUs')} href={routes.joinUs} />
+                        <MenuLink text={t('telegram')} href={links.contactUs} />
+                        <MenuLink text={t('whatsApp')} href={links.whatsApp} />
+                        <MenuLink text={t('bookCall')} href={links.bookCall} />
+                        <MenuLink href='#' text={t('signUp')} onClick={() => handleRedirectWithGTM(links.register)} />
+                    </Space>
                 </Space>
             </Drawer.Body>
         </Drawer>

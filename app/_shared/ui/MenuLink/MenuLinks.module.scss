@@ -1,0 +1,27 @@
+@import '/app/_shared/const/variables';
+
+.link {
+    @include flexHorizontalSpace(2);
+    align-items: center;
+    padding: $point * 3.5 $point * 3;
+    border: 1px solid transparent;
+    border-radius: $point * 2;
+    white-space: nowrap;
+    transition: all $transition;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background: rgb(255 255 255 / 64%);
+        backdrop-filter: blur(8px);
+        border-color: $white;
+        box-shadow: 0 $point * 2 $point * 4 $point * -1 rgb(3 7 18 / 2%);
+        color: $primary500 !important;
+    }
+
+    @media (any-hover: hover) {
+        &:not(.active):hover {
+            color: $neutral600;
+        }
+    }
+}

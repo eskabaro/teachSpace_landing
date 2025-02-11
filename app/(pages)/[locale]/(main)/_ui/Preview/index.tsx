@@ -1,5 +1,5 @@
 import { Atma } from 'next/font/google'
-import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 import type { FC } from 'react'
 import type { IconsType } from '@shared/const/icons'
 import { links } from '@shared/const/links'
@@ -12,33 +12,34 @@ import Icon from '@shared/ui/Icon'
 import ResponsiveImage from '@shared/ui/ResponsiveImage'
 import Space from '@shared/ui/Space'
 import Text, { Title } from '@shared/ui/Typography'
-import macbookImg from './assets/macbook.png'
+import VideoWrapper from '@shared/ui/VideoWrapper'
 import mobileBgImg from './assets/mobile-bg.png'
-import phonesImg from './assets/phones.png'
 import bgImg from './assets/preview-bg.png'
 import tabletBgImg from './assets/tablet-bg.png'
 import s from './Preview.module.scss'
 
-const list = [
-    {
-        icon: 'book',
-        text: 'Create a convenient learning plan.'
-    },
-    {
-        icon: 'chart-success',
-        text: 'Check homework effortlessly with AI.'
-    },
-    {
-        icon: 'status-up',
-        text: 'Track your students’ progress.'
-    },
-    {
-        icon: 'magicpen',
-        text: 'Design high-quality lessons with AI.'
-    }
-]
-
 const Preview: FC = () => {
+    const t = useTranslations('Preview')
+
+    const list = [
+        {
+            icon: 'book',
+            text: t('list.0.text')
+        },
+        {
+            icon: 'chart-success',
+            text: t('list.1.text')
+        },
+        {
+            icon: 'status-up',
+            text: t('list.2.text')
+        },
+        {
+            icon: 'magicpen',
+            text: t('list.3.text')
+        }
+    ]
+
     return (
         <Flex className={s.main} as='section'>
             <ResponsiveImage
@@ -53,20 +54,21 @@ const Preview: FC = () => {
                 tablet={{ classNameBlock: s.main_bg, src: tabletBgImg, quality: 100, priority: true, alt: '', placeholder: 'blur' }}
                 mobile={{ classNameBlock: s.main_bg, src: mobileBgImg, quality: 100, priority: true, alt: '', placeholder: 'blur' }}
             />
+
             <Space direction='vertical' align='center' w='100p' gap='12' lg={{ gap: '5' }}>
                 <Space direction='vertical' gap='6' align='center' lg={{ gap: '5' }}>
                     <Space className={s.title} direction='vertical' gap='3'>
                         <Title size='36' lgSize='32' mdSize='28' weight='700' lineHeight='120' align='center'>
-                            Focus on Students, Not on Routine
+                            {t('title')}
                         </Title>
                         <Text size='18' lgSize='16' mdSize='14' lineHeight='140' color='neutral600' align='center'>
-                            Tutory allows you to dedicate more time to your students by saving time on lesson planning, creating homework assignments, and preparing materials for lesson
+                            {t('description')}
                         </Text>
                         <Badge />
                     </Space>
-                    <Button onClick={() => handleRedirectWithGTM(links.register)}>Get started for free</Button>
+                    <Button onClick={() => handleRedirectWithGTM(links.register)}>{t('button')}</Button>
                 </Space>
-                <ResponsiveImage desktop={{ classNameBlock: s.preview, src: macbookImg, alt: '', placeholder: 'empty', loading: 'eager' }} mobile={{ classNameBlock: s.preview, src: phonesImg, alt: '', placeholder: 'empty', loading: 'eager' }} />
+                <VideoWrapper videoId='UvzIhvdLpls' />
                 <Space className={s.list} gap='6' lg={{ gap: '5' }} direction='horizontal' justify='center' as='ul'>
                     <Each
                         of={list}
@@ -96,6 +98,8 @@ const Preview: FC = () => {
 export const atma = Atma({ subsets: ['latin'], weight: ['500'] })
 
 const Badge: FC = () => {
+    const t = useTranslations('Preview')
+
     return (
         <div className={s.badge}>
             <div className={s.badge_wrapper}>
@@ -115,7 +119,7 @@ const Badge: FC = () => {
                         strokeLinecap='round'
                     />
                 </svg>
-                <div className={classnames(s.text, atma.className)}>Powered by AI</div>
+                <div className={classnames(s.text, atma.className)}>{t('badge')}</div>
             </div>
         </div>
     )

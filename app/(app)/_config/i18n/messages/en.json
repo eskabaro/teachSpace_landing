@@ -12,502 +12,146 @@
         "materials": "Materials",
         "logout": "Log out"
     },
-    "AuthLayout": {
-        "text": "Tutory has completely transformed the way I plan and manage my lessons. The AI-generated suggestions save me hours each week, and the student tracking helps me stay on top of individual progress. It's like having an extra assistant in the classroom!",
-        "author": {
-            "name": "— Sarah M.",
-            "info": "5th Grade Teacher"
+    "Footer": {
+        "title1": "Focus on Students, ",
+        "title2": "Not on Routine",
+        "signUp": "Sign up",
+        "contactUs": "Contact us",
+        "telegram": "Telegram",
+        "whatsApp": "WhatsApp",
+        "bookCall": "Book a call"
+    },
+    "Header": {
+        "signUp": "Sign up",
+        "menuLinks": {
+            "whyUs": "Why choose us",
+            "features": "Features",
+            "pricing": "Pricing",
+            "joinUs": "Join us"
         }
     },
-    "Login": {
-        "title": "Welcome back 👋",
-        "description": "Enter your email and password to log in your account",
-        "withGoogleBtn": "Log in with Google",
-        "or": "or",
-        "email": {
-            "label": "Email",
-            "placeholder": "Enter your email address"
-        },
-        "password": {
-            "label": "Password",
-            "placeholder": "Enter your password"
-        },
-        "remember": {
-            "label": "Remember me",
-            "link": "Reset password"
-        },
-        "submitBtn": "Log in",
-        "noAccount": {
-            "text": "Don't have an account?",
-            "link": "Sign up"
-        },
-        "success": "Logined successfully!"
+    "MenuDrawer": {
+        "whyUs": "Why choose us",
+        "features": "Features",
+        "pricing": "Pricing",
+        "joinUs": "Join us",
+        "telegram": "Telegram",
+        "whatsApp": "WhatsApp",
+        "bookCall": "Book a call",
+        "signUp": "Sign up"
     },
-    "Register": {
-        "title": "Welcome 👋",
-        "description": "Fill out below from and create your account for free",
-        "fullName": {
-            "label": "Full name",
-            "placeholder": "Enter your full name"
-        },
-        "email": {
-            "label": "Email",
-            "placeholder": "Enter your email"
-        },
-        "password": {
-            "label": "Password",
-            "placeholder": "Enter your password"
-        },
-        "validation": {
-            "length": "At least 8 character",
-            "numLetters": "Both numbers, letters and special characters"
-        },
-        "submitBtn": "Sign up",
-        "existAccount": {
-            "text": "Have an account?",
-            "link": "Log in"
-        },
-        "success": "Registration successfully!"
-    },
-    "ResetPassword": {
-        "title": "Reset password",
-        "description": "Enter your email to reset your password",
-        "label": "Email",
-        "placeholder": "Write your email",
-        "emailRequired": "Email is required",
-        "submitBtn": "Reset password",
-        "noAccount": {
-            "text": "Don't have an account?",
-            "link": "Sign up"
-        },
-        "Success": {
-            "title": "Password reset email has been sent ",
-            "description": "Please check your email for instructions to reset your password",
-            "close": "Close"
-        }
-    },
-    "RecoverPassword": {
-        "title": "Set a new password",
-        "description": "Enter your new password to reset your password",
-        "newPass": {
-            "label": "New password",
-            "placeholder": "Enter new password"
-        },
-        "confirmPass": {
-            "label": "Confirm password",
-            "placeholder": "Enter new password again",
-            "mismatch": "Password mismatch"
-        },
-        "validation": {
-            "length": "At least 8 character",
-            "numLetters": "Both number and letters"
-        },
-        "submitBtn": "Set password",
-        "success": "Password successfully changed"
-    },
-    "Schedule": {
-        "time": "Time",
-        "addNew": "Add new lesson",
-        "addNewDescription": "Fill out below form to add a new lesson",
-        "cancel": "Cancel",
-        "add": "Add lesson",
-        "changeLesson": "Change lesson",
-        "changeLessonDescription": "Fill out below form to change the lesson",
-        "LessonInformation": {
-            "title": "Lesson information",
-            "titleInput": {
-                "label": "Title",
-                "placeholder": "Write a title",
-                "required": "Title is required"
+    "Preview": {
+        "title": "Focus on Students, Not on Routine",
+        "description": "Tutory allows you to dedicate more time to your students by saving time on lesson planning, creating homework assignments, and preparing materials for lesson",
+        "button": "Get started for free",
+        "badge": "Powered by AI",
+        "list": [
+            {
+                "text": "Create a convenient learning plan."
             },
-            "date": {
-                "label": "Date",
-                "placeholder": "10 Sep 2024",
-                "required": "Date is required"
+            {
+                "text": "Check homework effortlessly with AI."
             },
-            "plannedFrom": {
-                "label": "From",
-                "required": "Planned from is required"
+            {
+                "text": "Track your students’ progress."
             },
-            "plannedTo": {
-                "label": "To",
-                "required": "Planned to is required"
-            },
-            "assign": "Assign to:",
-            "assignRequired": "Assign is required",
-            "assignButton": "New student",
-            "description": {
-                "label": "Description",
-                "placeholder": "Write a description"
-            },
-            "note": {
-                "label": "Note",
-                "placeholder": "Write a note"
+            {
+                "text": "Design high-quality lessons with AI."
             }
-        },
-        "DeleteModal": {
-            "title": "Delete lesson",
-            "description": "Are you sure you want to delete this lesson? you won't be able to recover this action after the process",
-            "cancel": "Cancel",
-            "delete": "Delete"
-        }
+        ]
     },
-    "Students": {
-        "title": "Students",
-        "item": {
-            "btn": "Details"
-        }
-    },
-    "Student": {
-        "title": "Student profile",
-        "heading-btns": {
-            "notes": "View notes",
-            "schedule": "Change schedule",
-            "profile": "Edit profile"
-        },
-        "about": "About",
-        "lessonList": {
-            "title": "Stage",
-            "btns": {
-                "planned": "Planned",
-                "completed": "Completed"
+    "ProblemsSolve": {
+        "title": "What Problems We Solve",
+        "accordion": [
+            {
+                "title": "Speed up lesson preparation and homework creation.",
+                "description": "With Tutory, you can effortlessly generate AI-powered materials in just minutes, perfect for lessons or independent practice. Easily export them as PDFs or publish them online to share with your students."
             },
-            "item": {
-                "title": "Lesson",
-                "badges": {
-                    "planned": "Planned",
-                    "completed": "Completed"
-                }
+            {
+                "title": "Automates homework checking with AI.",
+                "description": "After homework is completed, AI reviews all tasks without predefined correct answers within minutes."
             },
-            "successMsg": {
-                "changeLessonsOrder": "Order successfully changed"
+            {
+                "title": "Lesson planning and schedule tracking.",
+                "description": "Our platform enables you to create personalized learning plans tailored to each student’s goals, all done automatically to meet their unique needs. Additionally, you can customize the program and track scheduled lessons with ease."
             }
-        },
-        "studyProgress": {
-            "title": "Study progress",
-            "aboutStage": "About stage",
-            "planUntilDate": "Plan until"
-        },
-        "stagesList": {
-            "title": "Learning stages"
-        },
-        "editProfileModal": {
-            "title": "Edit profile",
-            "fullName": {
-                "label": "Full name"
-            },
-            "email": {
-                "label": "Email address"
-            },
-            "phone": {
-                "label": "Phone number"
-            },
-            "about": {
-                "label": "About student"
-            },
-            "btn": {
-                "discard": "Discard",
-                "save": "Save",
-                "delete": "Delete",
-                "change": "Change picture"
-            },
-            "success": "Profile successfully changed",
-            "error": "Something went wrong, try again later"
-        },
-        "noteModal": {
-            "title": "Note",
-            "btn": {
-                "discard": "Discard",
-                "save": "Save"
-            },
-            "success": "Notes successfully changed"
-        },
-        "scheduleModal": {
-            "title": "Change schedule",
-            "btn": {
-                "discard": "Discard",
-                "save": "Save"
-            },
-            "success": "Schedule successfully changed"
-        }
+        ]
     },
-    "Materials": {
-        "title": "Lesson Materials",
-        "add": "Create a new material",
-        "placeholder": "Search materials...",
-        "card": {
-            "rename": "Rename",
-            "duplicate": "Duplicate",
-            "delete": "Delete",
-            "btn": "See details"
-        }
-    },
-    "CreateMaterial": {
-        "title": "Create a new material",
-        "bannerTitle": "Create personalized AI-powered activities for English teachers!",
-        "bannerSubTitle": "Build tasks that can be exported as PDFs, accessed on the website, completed with students during lessons, or assigned as homework.",
-        "createBtn": "Create",
-        "addMoreBtn": "Add",
-        "createWithAiBtn": "Create with AI",
-        "creatingBtn": "Creating",
-        "outputLoading": {
-            "title": "Just a few seconds!",
-            "subTitle": "Please wait a moment while the AI generates a response."
-        },
-        "activities": {
-            "reading": {
-                "title": "📖 Reading",
-                "text": {
-                    "title": "Create a text on a certain topic",
-                    "subTitle": "Create a text",
-                    "description": "Creates a text on a certain topic. Can be used during a lesson or as a homework task after a reading, listening or vocabulary lesson."
-                },
-                "reading": {
-                    "title": "Create open questions to the text",
-                    "subTitle": "Open Questions",
-                    "description": "Creates a list of open questions. Ask your students these questions to make sure they understand the text."
-                },
-                "ABCD": {
-                    "title": "Create ABCD questions for a text",
-                    "subTitle": "ABCD Questions",
-                    "description": "Creates a list of ABCD questions for a text with only one correct answer."
-                },
-                "trueFalse": {
-                    "title": "Create True/False statements based on text",
-                    "subTitle": "True / False",
-                    "description": "Creates a true/false reading exercise for the student to check if they understand the content of the text."
-                }
+    "WhyUs": {
+        "title": "Why Choose Tutory?",
+        "items": [
+            {
+                "title": "AI Homework Review",
+                "subTitle": "Quickly and accurately check homework with AI, saving time and improving feedback quality."
             },
-            "vocabulary": {
-                "title": "📂 Vocabulary",
-                "fill": {
-                    "title": "Create fill in the gap question based on text",
-                    "subTitle": "Fill in the Gap",
-                    "description": "Replaces all the chosen words in the text with gaps. Gives a list of these words separately."
-                },
-                "vocabulary": {
-                    "title": "Essential vocabulary on the topic",
-                    "subTitle": "Essential Vocabulary",
-                    "description": "Suggests a list of essential vocabulary items for the chosen topic. Use this list in the other Tutory tools to create a variety of exercises for your lesson."
-                },
-                "matching": {
-                    "title": "Create a matching exercise word-definition",
-                    "subTitle": "Matching Exercise",
-                    "description": "Automatically creates a matching exercise for a list of words. Ask your student to match the word to its meaning!"
-                },
-                "list": {
-                    "title": "Create a list of sentences with your vocabulary",
-                    "subTitle": "Sentence List",
-                    "description": "Creates a list of sentences with target vocabulary. It's a great idea to use them later in the 'Fill in the Gap' tool!"
-                },
-                "exercise": {
-                    "title": "Create an exercise with matching halves",
-                    "subTitle": "Matching Halves",
-                    "description": "Creates an exercise for your  students in which they need to correctly match the halves of  collocations, sentences, and so on. It's an excellent way to practise or revise grammar and vocabulary chunks."
-                },
-                "wordTranslation": {
-                    "title": "Word-Translation matching",
-                    "subTitle": "Word Translation",
-                    "description": "This tool translates a list of  words or phrases into different world languages and creates a matching  exercise. Use it for vocabulary presentation and revision in bilingual  classrooms."
-                }
+            {
+                "title": "Simple Export to PDF",
+                "subTitle": "Easily download completed materials in PDF format for convenient sharing or use during lessons."
             },
-            "writing": {
-                "title": "✒️ Writing",
-                "findQuotes": {
-                    "title": "Find quotes by famous people on the topic",
-                    "subTitle": "Famous Quotes",
-                    "description": "Creates a list of quotes by famous people. Perfect for warm-ups, discussions, and essay topics."
-                },
-                "list": {
-                    "title": "Create a list of opinions by random people",
-                    "subTitle": "Opinion List",
-                    "description": "Creates four opinions by random people on the topic. Use it to encourage students to consider different points of view."
-                },
-                "link": {
-                    "title": "Link words into sentences based on your text",
-                    "subTitle": "Link Words",
-                    "description": "Creates an exercise for students to create unique sentences by connecting words given in each prompt."
-                },
-                "writing": {
-                    "title": "Creative writing with target vocabulary",
-                    "subTitle": "Creative Writing",
-                    "description": "Gives a set of creative writing  tasks to encourage your students to use the new vocabulary. These  include social media posts, comments, emails, reviews and so on."
-                }
+            {
+                "title": "21 Templates",
+                "subTitle": "Create a variety of materials suitable for both lessons and homework assignments."
             },
-            "speaking": {
-                "title": "🗣 Speaking",
-                "discussion": {
-                    "title": "Find discussion questions based on your text",
-                    "subTitle": "Discussion Questions",
-                    "description": "Creates discussion questions on a given topic. You can use them as a warm-up or at any other stage of your lesson."
-                },
-                "list": {
-                    "title": "Create a list of advantages and disadvantages",
-                    "subTitle": "Pros and Cons",
-                    "description": "Creates a list of advantages and disadvantages on a topic. Great for discussions or debates."
-                },
-                "quotes": {
-                    "title": "Find quotes by famous people on the topic",
-                    "subTitle": "Famous Quotes",
-                    "description": "Creates a list of quotes by famous people. Perfect for warm-ups, discussions, and essay topics."
-                },
-                "opinions": {
-                    "title": "Create a list of opinions by random people",
-                    "subTitle": "Opinion List",
-                    "description": "Creates four opinions by random people on the topic. Use it to encourage students to consider different  points of view and evaluate arguments."
-                },
-                "link": {
-                    "title": "Link words into sentences based on your text",
-                    "subTitle": "Link Words",
-                    "description": "Creates an exercise in which a  student is expected to come up with unique sentences by logically  connecting the words given in each prompt. Can be used as a writing or a speaking exercise."
-                }
+            {
+                "title": "Lesson Tracking",
+                "subTitle": "Conveniently manage scheduled lessons and reschedule them if needed."
             },
-            "grammar": {
-                "title": "📚 Grammar",
-                "fill": {
-                    "title": "Create fill in the gap question based on text",
-                    "subTitle": "Fill in the Gap",
-                    "description": "Replaces all the chosen words in the text with gaps. Gives a list of these words separately."
-                },
-                "exercise": {
-                    "title": "Create an exercise with matching halves",
-                    "subTitle": "Matching Halves",
-                    "description": "Creates an exercise for your  students in which they need to correctly match the halves of  collocations, sentences, and so on. It's an excellent way to practise or revise grammar and vocabulary chunks."
-                },
-                "scramble": {
-                    "title": "Scramble the words in sentences",
-                    "subTitle": "Word Scramble",
-                    "description": "Mixes up all the words in a  sentence. Ask your student to put the words in the right order. You can  give this task to practice word order in questions or grammar  structures."
-                }
+            {
+                "title": "AI Customizable Learning Plan",
+                "subTitle": "Automatically generate and customize learning plans tailored to each student’s goals and progress."
+            },
+            {
+                "title": "Student Tests",
+                "subTitle": "Easily share tests with students and review their results in minutes."
             }
-        }
+        ]
     },
-    "AddStudentDrawer": {
-        "title": "Add student",
-        "btn": {
-            "back": "Back",
-            "next": "Next",
-            "finish": "Finish"
-        },
-        "nameStep": {
-            "title": "Student name",
-            "subTitle": "Write student full name",
-            "label": "Full name",
-            "placeholder": "Write student full name"
-        },
-        "planStep": {
-            "title": "Plan",
-            "subTitle": "Choose your plan",
-            "first": {
-                "title": "AI Plan Generation",
-                "subTitle": "Currently, AI generation works best for English. For other languages, the quality is basic.",
-                "variants": ["AI Generation", "Detailed Plan ", "Recommendations", "Changeable plan"]
+    "Features": {
+        "title": "Main Features of Our Platform",
+        "items": [
+            {
+                "title": "AI Learning Plans",
+                "description": "Tutory allows you to generate personalized learning plans automatically, tailored to the unique goals and needs of each student. The AI analyzes provided data to structure the plan effectively, helping teachers save time and focus on teaching.",
+                "button": "Get Started"
             },
-            "second": {
-                "title": "Start From Scratch",
-                "subTitle": "Create your own plan from scratch with no AI assistance or predefined structure.",
-                "variants": ["No generation", "Without AI", "Blank Plan"]
+            {
+                "title": "Lesson Tracking and Rescheduling"
+            },
+            {
+                "title": "In-Platform Test Creation"
+            },
+            {
+                "title": "Lesson Assignment Creation",
+                "description": "Create engaging and interactive assignments directly on the platform. Whether for in-class activities or independent practice, the platform offers multiple templates and tools to help teachers quickly design materials that fit their teaching style.",
+                "button": "Get Started"
             }
+        ]
+    },
+    "Plan": {
+        "title": "Choose Your Perfect Subscription Plan",
+        "switch": {
+            "Monthly": "Monthly",
+            "Annual": "Annual"
         },
-        "startStep": {
-            "title": "Start",
-            "subTitle": "Fill out the information about the student and the plan",
-            "labelName": "Full name",
-            "placeholderName": "Student full name",
-            "labelLevel": "Student level",
-            "placeholderLevel": "Student level",
-            "labelDuration": "Plan duration",
-            "durationOptions": {
-                "1Month": "1 Month",
-                "3Months": "3 Months",
-                "6Months": "6 Months",
-                "1Year": "1 Year"
+        "cards": [
+            {
+                "title": "Basic",
+                "description": "Access to the basic Tutory features",
+                "features": ["5 Listening activities in a day", "10 Text activities in a day", "5 students"],
+                "button": "Get Started"
             },
-            "placeholderDuration": "Plan duration",
-            "labelUploadFile": "File based on which the learning plane will be created",
-            "placeholderUploadFile": "Upload file",
-            "dragDrop": "Drop the file here",
-            "uploadLimitations": "PDF / Maximum File Size: 10MB"
-        },
-        "scheduleStep": {
-            "title": "Set up your AI schedule",
-            "subTitle": "Enter the lesson schedule with your student."
-        },
-        "levelNowStep": {
-            "title": "Level now",
-            "subTitle": "Fill in the information about the student's current level of knowledge.",
-            "languageLabel": "Language of the plan",
-            "languagePlaceholder": "Language",
-            "levelLabel": "What is the student's level?",
-            "levelPlaceholder": "The student has a basic level of English, B2.",
-            "topicLabel": "Which topics does the student confidently know?",
-            "topicLabelPlaceholder": "Present Simple, Present Continuous etc."
-        },
-        "goalStep": {
-            "title": "Goal",
-            "subTitle": "Fill in the information about the student's goal level of knowledge.",
-            "achieveLabel": "What does the student want to achieve as a result of the learning?",
-            "achievePlaceholder": "Professional proficiency in English at the C1 level, with strong conversational skills.",
-            "testLabel": "What tests does the student plan to take, and what is the deadline? (Optional)",
-            "testLabelPlaceholder": "To take the international Duolingo test in six months."
-        },
-        "lessons": {
-            "title": "First Lessons",
-            "lesson": "Lesson",
-            "placeholder": "Title"
-        }
+            {
+                "title": "Premium",
+                "description": "Unlock the full potential of your teaching journey with Tutory",
+                "features": ["200 Listening activities in a month", "Unlimited Text activities", "Unlimited students"],
+                "button": "Start 7-day free trial"
+            }
+        ]
     },
-    "editStageModal": {
-        "title": "Edit stages",
-        "labels": {
-            "name": "Stage title",
-            "stageUntil": "Stage Until",
-            "description": "Stage description",
-            "lessons": "Lessons",
-            "lessonsQuantity": "Enter number of lessons you want to generate",
-            "lessonsQuantityPlaceholder": "Enter number of lessons you want to generate",
-            "regenerateTitle": "Regenerate lessons with AI",
-            "deleteTitle": "Are you sure you want to delete this stage?"
-        },
-        "btns": {
-            "delete": "Delete",
-            "addLesson": "Add a new lesson",
-            "regenerateLessons": "Regenerate lessons with AI",
-            "discard": "Discard",
-            "save": "Save",
-            "addStage": "Add a new stage",
-            "back": "Back",
-            "regenerate": "Regenerate",
-            "cancel": "Cancel"
-        },
-        "successMsg": {
-            "deleteStage": "Stage successfully deleted",
-            "createNewStage": "Stage successfully created",
-            "regenerateLessonsWithAI": "Lessons successfully regenerated",
-            "changeStageInfo": "Stage information successfully changed",
-            "changeLessonsOrder": "Lessons order successfully changed"
-        }
-    },
-    "RenameMaterialModal": {
-        "title": "Rename the material",
-        "label": "Name",
-        "cancel": "Cancel",
-        "save": "Save",
-        "successMsg": "Lesson material name changed successfully"
-    },
-    "LogoutModal": {
-        "title": "Log out",
-        "text": "Are you sure you want to log out?",
-        "cancel": "Cancel",
-        "logout": "Log out"
-    },
-    "DeleteMaterialModal": {
-        "title": "Delete Material",
-        "text": "Are you sure you want to delete this material?",
-        "cancel": "Cancel",
-        "delete": "Delete"
-    },
-    "DragDropUploader": {
-        "label": "Drop the file here"
+    "JoinUs": {
+        "title": "Join Our Closed Tutor Focus Group to Gain Early Access to All Platform Features, Share Your Valuable Feedback and Suggestions, and Help Shape the Future of the Platform to Create an Even Better and More Effective User Experience for Educators and Students!",
+        "list": ["Early access to all platform features", "Opportunity to share your insights and suggestions", "Help improve the platform for a better user experience"],
+        "button": "Book a call",
+        "contactButton": "Contact us"
     }
 }

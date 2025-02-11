@@ -1,5 +1,5 @@
 'use client'
-import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 import type { FC } from 'react'
 import { links } from '@shared/const/links'
 import { handleRedirectWithGTM } from '@shared/lib/utils/gtmRedirect'
@@ -12,16 +12,17 @@ import MenuLinks from '@entities/MenuLinks'
 import s from './Header.module.scss'
 
 const Header: FC = () => {
+    const t = useTranslations('Header')
     const { setIsOpen } = useMenuContext()
 
     return (
         <Flex className={s.header} as='header' align='center' justify='between'>
-            <Logo width={200} className={s.header_logo} />
+            <Logo width={131} className={s.header_logo} />
             <Space className={s.header_menu} direction='horizontal'>
                 <MenuLinks />
             </Space>
             <Button onClick={() => handleRedirectWithGTM(links.register)} className={s.header_btn}>
-                Sign up
+                {t('signUp')}
             </Button>
             <Button className={s.header_burger} onClick={() => setIsOpen(true)} variant='transparent' mode='icon' icon='burger' />
         </Flex>

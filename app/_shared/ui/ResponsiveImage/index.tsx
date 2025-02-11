@@ -21,7 +21,7 @@ const ResponsiveImage: FC<Props> = ({ desktop, tablet, mobile }) => {
 
         return (
             <div className={classnames(className, props.classNameBlock)}>
-                <Image {...imageProps} alt='' />
+                <Image quality={100} {...imageProps} alt='' />
             </div>
         )
     }

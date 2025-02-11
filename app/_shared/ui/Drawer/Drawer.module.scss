@@ -53,8 +53,9 @@
         width: calc(100% - $point * 12);
         max-width: $point * 100;
         height: calc(100% - $point * 12);
-        background-color: $white;
-        background-image: url('./assets/bg.png');
+        background-color: $primary50;
+
+        // background-image: url('./assets/bg.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;

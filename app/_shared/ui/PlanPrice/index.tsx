@@ -23,7 +23,6 @@ const PlanPrice: FC<PlanPriceProps> = ({ price, period }) => {
             </Title>
             <Text className={s.planPrice_period}>{price > 0 ? `${period}` : 'For a life time'}</Text>
         </Space>
-
     )
 }
 
