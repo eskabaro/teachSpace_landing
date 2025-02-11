@@ -16,7 +16,7 @@ const Header: FC = () => {
 
     return (
         <Flex className={s.header} as='header' align='center' justify='between'>
-            <Logo width={200} className={s.header_logo} />
+            <Logo width={131} className={s.header_logo} />
             <Space className={s.header_menu} direction='horizontal'>
                 <MenuLinks />
             </Space>
