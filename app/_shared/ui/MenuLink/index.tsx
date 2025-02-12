@@ -13,7 +13,6 @@ interface Props {
 }
 
 const MenuLink: FC<Props> = ({ href, text, onClick }) => {
-
     const handleClick = () => {
         if (onClick) {
             onClick()
