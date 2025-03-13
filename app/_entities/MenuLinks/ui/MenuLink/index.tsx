@@ -7,13 +7,12 @@ import s from '../../styles/MenuLinks.module.scss'
 
 interface Props {
     text: string
-    href?: string
-    as?: typeof Link | 'button'
+    href: string
 }
 
-const MenuLink: FC<Props> = ({ href, text, as = Link }) => {
+const MenuLink: FC<Props> = ({ href, text }) => {
     return (
-        <Text as={as} className={classnames(s.link, 'hover-opacity')} href={href} size='16' align='center' weight='500' lineHeight='120' noWrap>
+        <Text as={Link} className={classnames(s.link, 'hover-opacity')} href={href} size='16' align='center' weight='500' lineHeight='120' noWrap>
             {text}
         </Text>
     )
