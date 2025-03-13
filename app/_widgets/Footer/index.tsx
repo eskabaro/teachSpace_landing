@@ -26,6 +26,12 @@ const Footer: FC = () => {
                     <Button onClick={() => handleRedirectWithGTM(links.register)} iconColor='neutral300' leftIcon='arrow-left' variant='transparent'>
                         {t('signUp')}
                     </Button>
+                    <Button as={Link} href='/privacy' iconColor='neutral300' leftIcon='arrow-left' variant='transparent'>
+                        {t('privacy')}
+                    </Button>
+                    <Button as={Link} href='/terms' iconColor='neutral300' leftIcon='arrow-left' variant='transparent'>
+                        {t('terms')}
+                    </Button>
                 </Space>
                 <Space direction='vertical' gap='6'>
                     <Button as={Link} href={links.contactUs} iconColor='neutral300' leftIcon='arrow-left' variant='transparent'>
