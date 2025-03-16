@@ -1,7 +1,7 @@
-import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 import type { FC } from 'react'
 import { links } from '@shared/const/links'
+import { handleRedirectWithGTM } from '@shared/lib/utils/gtmRedirect'
 import Button from '@shared/ui/Button'
 import ResponsiveImage from '@shared/ui/ResponsiveImage'
 import Space from '@shared/ui/Space'
@@ -24,7 +24,7 @@ const JoinUs: FC = () => {
                     </Text>
                 </Title>
                 <Space direction='horizontal' gap='6' sm={{ gap: '4' }}>
-                    <Button className={s.button} as={Link} href={links.register} variant='secondary'>
+                    <Button className={s.button} onClick={() => handleRedirectWithGTM(links.register)} variant='secondary'>
                         {t('joinUs')}
                     </Button>
                 </Space>
