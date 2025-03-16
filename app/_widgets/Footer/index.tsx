@@ -15,10 +15,10 @@ const Footer: FC = () => {
 
     return (
         <footer className={s.footer}>
-            <Space direction='vertical' gap='6' justify='center' w='50p' lg={{ gap: '3', w: '100p' }}>
-                <Logo width={200} />
+            <Space direction='vertical' gap='6' justify='center' w='100p' lg={{ gap: '3' }}>
+                <Logo width={132} />
                 <Text as='h1' size='32' lgSize='28' mdSize='24' weight='700' lineHeight='120'>
-                    {t('title1')} <br /> {t('title2')}
+                    {t('title')}
                 </Text>
             </Space>
             <Space className={s.footer_links} direction='horizontal' justify='between'>
