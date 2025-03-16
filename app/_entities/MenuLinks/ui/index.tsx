@@ -8,10 +8,9 @@ export const MenuLinks: FC = () => {
 
     return (
         <>
+            <MenuLink href={routes.problemsSolve} text={t('menuLinks.problemsSolve')} />
             <MenuLink href={routes.whyUs} text={t('menuLinks.whyUs')} />
-            <MenuLink href={routes.features} text={t('menuLinks.features')} />
-            <MenuLink href={routes.pricing} text={t('menuLinks.pricing')} />
-            <MenuLink href={routes.joinUs} text={t('menuLinks.joinUs')} />
+            <MenuLink href={routes.pdf} text={t('menuLinks.pdf')} />
         </>
     )
 }

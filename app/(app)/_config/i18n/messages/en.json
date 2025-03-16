@@ -26,10 +26,9 @@
     "Header": {
         "signUp": "Sign up",
         "menuLinks": {
+            "problemsSolve": "Problems we solve",
             "whyUs": "Why choose us",
-            "features": "Features",
-            "pricing": "Pricing",
-            "joinUs": "Join us"
+            "pdf": "Create PDF Materials"
         }
     },
     "MenuDrawer": {
