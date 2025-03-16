@@ -28,7 +28,7 @@
         "menuLinks": {
             "problemsSolve": "Problems we solve",
             "whyUs": "Why choose us",
-            "pdf": "Create PDF Materials"
+            "howToCreate": "Create PDF Materials"
         }
     },
     "MenuDrawer": {
@@ -143,5 +143,23 @@
         "list": ["Early access to all platform features", "Opportunity to share your insights and suggestions", "Help improve the platform for a better user experience"],
         "button": "Book a call",
         "contactButton": "Contact us"
+    },
+    "HowToCreate": {
+        "title1": "How to create PDF ",
+        "title2": "materials with Tutory",
+        "items": [
+            {
+                "title": "Choose Materials Type",
+                "description": "Select from a variety of materials for Reading, Vocabulary, Writing, Speaking, Grammar, and Listening to start creating instantly"
+            },
+            {
+                "title": "Generate Materials with AI",
+                "description": "Quickly create structured lesson materials with AI, reducing preparation time and ensuring high-quality content"
+            },
+            {
+                "title": "Customize & Export",
+                "description": "Easily adjust styles, layouts, and content, then export your materials as PDFs for seamless lesson delivery"
+            }
+        ]
     }
 }

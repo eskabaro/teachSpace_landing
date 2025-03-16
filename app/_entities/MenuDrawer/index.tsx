@@ -23,7 +23,7 @@ const MenuDrawer: FC = () => {
                     <Space className={s.menu_drawer_body} direction='vertical' gap='2'>
                         <MenuLink onClick={() => setIsOpen(false)} text={t('problemsSolve')} href={routes.problemsSolve} />
                         <MenuLink onClick={() => setIsOpen(false)} text={t('whyUs')} href={routes.whyUs} />
-                        <MenuLink onClick={() => setIsOpen(false)} text={t('pdf')} href={routes.pdf} />
+                        <MenuLink onClick={() => setIsOpen(false)} text={t('howToCreate')} href={routes.howToCreate} />
                         <MenuLink text={t('telegram')} href={links.contactUs} />
                         <MenuLink text={t('whatsApp')} href={links.whatsApp} />
                         <MenuLink text={t('bookCall')} href={links.bookCall} />

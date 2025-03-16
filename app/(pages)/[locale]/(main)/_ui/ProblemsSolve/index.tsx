@@ -79,7 +79,7 @@ const ProblemsSolve: FC = () => {
                             )}
                         />
                     </Space>
-                    <Image quality={100} priority className={s.slide} src={imagesDesktop[activeId]} width={524} height={390} alt='' />
+                    <Image quality={100} className={s.slide} src={imagesDesktop[activeId]} width={524} height={390} alt='' />
                 </div>
             </VerticalFlex>
 
