@@ -79,28 +79,20 @@
         "title": "Why Choose Tutory?",
         "items": [
             {
-                "title": "AI Homework Review",
-                "subTitle": "Quickly and accurately check homework with AI, saving time and improving feedback quality."
-            },
-            {
                 "title": "Simple Export to PDF",
                 "subTitle": "Easily download completed materials in PDF format for convenient sharing or use during lessons."
             },
             {
-                "title": "21 Templates",
-                "subTitle": "Create a variety of materials suitable for both lessons and homework assignments."
+                "title": "24 Templates",
+                "subTitle": "Create a variety of materials suitable for both lessons and homework assignments"
             },
             {
-                "title": "Lesson Tracking",
-                "subTitle": "Conveniently manage scheduled lessons and reschedule them if needed."
-            },
-            {
-                "title": "AI Customizable Learning Plan",
-                "subTitle": "Automatically generate and customize learning plans tailored to each student’s goals and progress."
+                "title": "Advanced Customization",
+                "subTitle": "Easily adjust styles, layouts, and content to create personalized lesson materials"
             },
             {
                 "title": "Student Tests",
-                "subTitle": "Easily share tests with students and review their results in minutes."
+                "subTitle": "Easily share tests with students and review their results in minutes"
             }
         ]
     },
