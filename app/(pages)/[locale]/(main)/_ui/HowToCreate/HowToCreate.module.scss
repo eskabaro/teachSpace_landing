@@ -70,8 +70,18 @@
 
 .imageWrapper {
     position: relative;
-    aspect-ratio: 830/530;
+    aspect-ratio: 820/530;
     width: 63%;
+
+    // Due to the difference in the original image size 1st is 830, 2nd is 820, we need to adjust the width of the first image
+    &.firstImage {
+        aspect-ratio: 830/530;
+        width: 66%;
+
+        @media (max-width: $screen-lg) {
+            width: 100%;
+        }
+    }
 
     img {
         position: absolute;

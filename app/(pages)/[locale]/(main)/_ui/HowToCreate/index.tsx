@@ -47,7 +47,7 @@ const HowToCreate: FC = () => {
                         </Text>
                         <Text className={styles.description}>{item.description}</Text>
                     </div>
-                    <div className={styles.imageWrapper}>
+                    <div className={`${styles.imageWrapper} ${index === 0 ? styles.firstImage : ''}`}>
                         <Image quality={100} src={item.image} alt={item.title} fill />
                     </div>
                 </div>
