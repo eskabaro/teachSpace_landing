@@ -62,16 +62,16 @@
         "title": "What Problems We Solve",
         "accordion": [
             {
-                "title": "Speed up lesson preparation and homework creation.",
-                "description": "With Tutory, you can effortlessly generate AI-powered materials in just minutes, perfect for lessons or independent practice. Easily export them as PDFs or publish them online to share with your students."
+                "title": "Creating materials from scratch takes too much time",
+                "description": "With Tutory, you can quickly generate learning materials with AI without spending hours on preparation. Simply customize the content, choose the format, and get a ready-to-use PDF document or online test in minutes"
             },
             {
-                "title": "Automates homework checking with AI.",
-                "description": "After homework is completed, AI reviews all tasks without predefined correct answers within minutes."
+                "title": "Pre-made materials don’t fit specific lessons",
+                "description": "Forget about unsuitable templates—Tutory allows you to customize materials to match your lessons. Adjust the content, change the style, and structure everything to perfectly fit your needs."
             },
             {
-                "title": "Lesson planning and schedule tracking.",
-                "description": "Our platform enables you to create personalized learning plans tailored to each student’s goals, all done automatically to meet their unique needs. Additionally, you can customize the program and track scheduled lessons with ease."
+                "title": "There’s no easy way to create interactive exercises.",
+                "description": "With Tutory, you can effortlessly create online tests using AI. Just add tasks, copy the test link, and send it to your student—no complicated tools or extra steps needed."
             }
         ]
     },
