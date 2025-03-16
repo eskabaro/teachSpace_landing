@@ -154,6 +154,18 @@ export const icons = {
             />
         </svg>
     ),
+    'mouse-square': (props: SVGProps<SVGSVGElement>) => (
+        <svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48' fill='none' {...props}>
+            <path d='M44 24V18C44 8 40 4 30 4H18C8 4 4 8 4 18V30C4 40 8 44 18 44H24' stroke='currentColor' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' />
+            <path
+                d='M41.92 35.68L38.66 36.78C37.76 37.08 37.04 37.78 36.74 38.7L35.64 41.96C34.7 44.78 30.74 44.72 29.86 41.9L26.16 30C25.44 27.64 27.62 25.44 29.96 26.18L41.88 29.88C44.68 30.76 44.72 34.74 41.92 35.68Z'
+                stroke='currentColor'
+                stroke-width='3'
+                stroke-linecap='round'
+                stroke-linejoin='round'
+            />
+        </svg>
+    ),
     teacher: (props: SVGProps<SVGSVGElement>) => (
         <svg width='48' height='48' viewBox='0 0 48 48' fill='none' {...props} xmlns='http://www.w3.org/2000/svg'>
             <path

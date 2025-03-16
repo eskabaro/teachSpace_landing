@@ -42,22 +42,19 @@
         "signUp": "Sign up"
     },
     "Preview": {
-        "title": "Focus on Students, Not on Routine",
-        "description": "Tutory allows you to dedicate more time to your students by saving time on lesson planning, creating homework assignments, and preparing materials for lesson",
+        "title": "Create materials in minutes",
+        "description": "Tutory allows you to quickly create PDF materials and online tests with flexible customization right on the platform. Easily edit and adapt them for your lessons!",
         "button": "Get started for free",
         "badge": "Powered by AI",
         "list": [
             {
-                "text": "Create a convenient learning plan."
+                "text": "Create customizable PDF materials"
             },
             {
-                "text": "Check homework effortlessly with AI."
+                "text": "Develop interactive online tests"
             },
             {
-                "text": "Track your students’ progress."
-            },
-            {
-                "text": "Design high-quality lessons with AI."
+                "text": "Review test results with AI"
             }
         ]
     },
