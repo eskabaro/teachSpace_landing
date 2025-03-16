@@ -38,7 +38,7 @@ const HowToCreate: FC = () => {
 
     return (
         <Space as='section' className={styles.main} id='how-to-create'>
-            <Title title={t('title1')} secondTitle={t('title2')} alignCenterMd align='center' badge={{ variant: 'secondary', icon: 'category', text: 'Key Feature' }} />
+            <Title title={t('title1')} secondTitle={t('title2')} align='center' textAlign='center' badge={{ variant: 'secondary', icon: 'category', text: 'Key Feature' }} />
             {items.map((item, index: number) => (
                 <div key={index} className={styles.item}>
                     <div className={styles.content}>
