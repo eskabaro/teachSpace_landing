@@ -139,10 +139,9 @@
         ]
     },
     "JoinUs": {
-        "title": "Join Our Closed Tutor Focus Group to Gain Early Access to All Platform Features, Share Your Valuable Feedback and Suggestions, and Help Shape the Future of the Platform to Create an Even Better and More Effective User Experience for Educators and Students!",
-        "list": ["Early access to all platform features", "Opportunity to share your insights and suggestions", "Help improve the platform for a better user experience"],
-        "button": "Book a call",
-        "contactButton": "Contact us"
+        "title": "Start Using Tutory Today!",
+        "description": "Create customizable lesson materials and AI-powered tests in minutes. Save time and focus on teaching! 🚀",
+        "joinUs": "Get started for free"
     },
     "HowToCreate": {
         "title1": "How to create PDF ",
