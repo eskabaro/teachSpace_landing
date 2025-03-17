@@ -12,20 +12,20 @@ import IntercomProvider from '@shared/providers/IntercomProvider'
 const nunito = Nunito({ subsets: ['latin'], weight: ['400', '500', '600', '700'] })
 
 export const generateMetadata: GenerateMetadataType = ({ params }) => ({
-    metadataBase: new URL(`https://teach-space.co/${params.locale}`),
-    title: 'Tutory - Платформа для професійних репетиторів',
-    description: 'Ми створюємо рішення, яке підвищить вашу продуктивність та допоможе вам викладати на професійному рівні',
-    keywords: 'Tutory, репетиторство, онлайн-репетиторство, платформа для репетиторів, платформа для вчителів, платформа для викладачів',
+    metadataBase: new URL(`https://tutory.pro/${params.locale}`),
+    title: 'Tutory – Create teaching materials in minutes',
+    description: 'Quickly create and customize PDF materials and online tests directly on Tutory. Easily edit and adapt content for your lessons!',
+    keywords: 'Tutory, create teaching materials, PDF materials, online tests, lesson planning, tutors, teaching resources',
     openGraph: {
-        title: 'Tutory - Платформа для професійних репетиторів',
-        description: 'Ми створюємо рішення, яке підвищить вашу продуктивність та допоможе вам викладати на професійному рівні',
-        url: 'https://teach-space.co',
-        siteName: 'Tutory - Платформа для професійних репетиторів',
+        title: 'Tutory – Create teaching materials in minutes',
+        description: 'Quickly create and customize PDF materials and online tests directly on Tutory. Easily edit and adapt content for your lessons!',
+        url: 'https://tutory.pro',
+        siteName: 'Tutory',
         images: [
             {
-                url: 'https://teach-space.co/opengraph-image.png',
-                width: 800,
-                height: 600
+                url: 'https://tutory.pro/opengraph-image.png',
+                width: 1200,
+                height: 628
             }
         ],
         locale: 'en_US',
@@ -33,8 +33,8 @@ export const generateMetadata: GenerateMetadataType = ({ params }) => ({
     },
     authors: [
         {
-            name: 'WebXwiz Team',
-            url: 'https://webxwiz.com'
+            name: 'Tutory',
+            url: 'https://tutory.pro'
         }
     ]
 })
