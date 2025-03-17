@@ -13,8 +13,7 @@
         "logout": "Log out"
     },
     "Footer": {
-        "title1": "Focus on Students, ",
-        "title2": "Not on Routine",
+        "title": "Create materials in minutes",
         "signUp": "Sign up",
         "privacy": "Privacy Policy",
         "terms": "Terms of Use",
@@ -26,10 +25,9 @@
     "Header": {
         "signUp": "Sign up",
         "menuLinks": {
+            "problemsSolve": "Problems we solve",
             "whyUs": "Why choose us",
-            "features": "Features",
-            "pricing": "Pricing",
-            "joinUs": "Join us"
+            "howToCreate": "Create PDF Materials"
         }
     },
     "MenuDrawer": {
@@ -37,28 +35,27 @@
         "features": "Features",
         "pricing": "Pricing",
         "joinUs": "Join us",
+        "howToCreate": "Create PDF Materials",
+        "problemsSolve": "Problems we solve",
         "telegram": "Telegram",
         "whatsApp": "WhatsApp",
         "bookCall": "Book a call",
         "signUp": "Sign up"
     },
     "Preview": {
-        "title": "Focus on Students, Not on Routine",
-        "description": "Tutory allows you to dedicate more time to your students by saving time on lesson planning, creating homework assignments, and preparing materials for lesson",
+        "title": "Create materials in minutes",
+        "description": "Tutory allows you to quickly create PDF materials and online tests with flexible customization right on the platform. Easily edit and adapt them for your lessons!",
         "button": "Get started for free",
         "badge": "Powered by AI",
         "list": [
             {
-                "text": "Create a convenient learning plan."
+                "text": "Create customizable PDF materials"
             },
             {
-                "text": "Check homework effortlessly with AI."
+                "text": "Develop interactive online tests"
             },
             {
-                "text": "Track your students’ progress."
-            },
-            {
-                "text": "Design high-quality lessons with AI."
+                "text": "Review test results with AI"
             }
         ]
     },
@@ -66,16 +63,16 @@
         "title": "What Problems We Solve",
         "accordion": [
             {
-                "title": "Speed up lesson preparation and homework creation.",
-                "description": "With Tutory, you can effortlessly generate AI-powered materials in just minutes, perfect for lessons or independent practice. Easily export them as PDFs or publish them online to share with your students."
+                "title": "Creating materials from scratch takes too much time",
+                "description": "With Tutory, you can quickly generate learning materials with AI without spending hours on preparation. Simply customize the content, choose the format, and get a ready-to-use PDF document or online test in minutes"
             },
             {
-                "title": "Automates homework checking with AI.",
-                "description": "After homework is completed, AI reviews all tasks without predefined correct answers within minutes."
+                "title": "Pre-made materials don’t fit specific lessons",
+                "description": "Forget about unsuitable templates—Tutory allows you to customize materials to match your lessons. Adjust the content, change the style, and structure everything to perfectly fit your needs."
             },
             {
-                "title": "Lesson planning and schedule tracking.",
-                "description": "Our platform enables you to create personalized learning plans tailored to each student’s goals, all done automatically to meet their unique needs. Additionally, you can customize the program and track scheduled lessons with ease."
+                "title": "There’s no easy way to create interactive exercises.",
+                "description": "With Tutory, you can effortlessly create online tests using AI. Just add tasks, copy the test link, and send it to your student—no complicated tools or extra steps needed."
             }
         ]
     },
@@ -83,28 +80,20 @@
         "title": "Why Choose Tutory?",
         "items": [
             {
-                "title": "AI Homework Review",
-                "subTitle": "Quickly and accurately check homework with AI, saving time and improving feedback quality."
-            },
-            {
                 "title": "Simple Export to PDF",
                 "subTitle": "Easily download completed materials in PDF format for convenient sharing or use during lessons."
             },
             {
-                "title": "21 Templates",
-                "subTitle": "Create a variety of materials suitable for both lessons and homework assignments."
+                "title": "24 Templates",
+                "subTitle": "Create a variety of materials suitable for both lessons and homework assignments"
             },
             {
-                "title": "Lesson Tracking",
-                "subTitle": "Conveniently manage scheduled lessons and reschedule them if needed."
-            },
-            {
-                "title": "AI Customizable Learning Plan",
-                "subTitle": "Automatically generate and customize learning plans tailored to each student’s goals and progress."
+                "title": "Advanced Customization",
+                "subTitle": "Easily adjust styles, layouts, and content to create personalized lesson materials"
             },
             {
                 "title": "Student Tests",
-                "subTitle": "Easily share tests with students and review their results in minutes."
+                "subTitle": "Easily share tests with students and review their results in minutes"
             }
         ]
     },
@@ -151,9 +140,26 @@
         ]
     },
     "JoinUs": {
-        "title": "Join Our Closed Tutor Focus Group to Gain Early Access to All Platform Features, Share Your Valuable Feedback and Suggestions, and Help Shape the Future of the Platform to Create an Even Better and More Effective User Experience for Educators and Students!",
-        "list": ["Early access to all platform features", "Opportunity to share your insights and suggestions", "Help improve the platform for a better user experience"],
-        "button": "Book a call",
-        "contactButton": "Contact us"
+        "title": "Start Using Tutory Today!",
+        "description": "Create customizable lesson materials and AI-powered tests in minutes. Save time and focus on teaching! 🚀",
+        "joinUs": "Get started for free"
+    },
+    "HowToCreate": {
+        "title1": "How to create PDF ",
+        "title2": "materials with Tutory",
+        "items": [
+            {
+                "title": "Choose Materials Type",
+                "description": "Select from a variety of materials for Reading, Vocabulary, Writing, Speaking, Grammar, and Listening to start creating instantly"
+            },
+            {
+                "title": "Generate Materials with AI",
+                "description": "Quickly create structured lesson materials with AI, reducing preparation time and ensuring high-quality content"
+            },
+            {
+                "title": "Customize & Export",
+                "description": "Easily adjust styles, layouts, and content, then export your materials as PDFs for seamless lesson delivery"
+            }
+        ]
     }
 }

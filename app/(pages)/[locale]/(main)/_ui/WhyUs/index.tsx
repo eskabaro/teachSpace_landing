@@ -13,35 +13,25 @@ const WhyUs: FC = () => {
 
     const items = [
         {
-            icon: 'message-outline',
+            icon: 'pdf-outline',
             title: t('items.0.title'),
             subTitle: t('items.0.subTitle')
         },
         {
-            icon: 'pdf-outline',
+            icon: 'copy-outline',
             title: t('items.1.title'),
             subTitle: t('items.1.subTitle')
         },
 
         {
-            icon: 'copy-outline',
+            icon: 'magicpen',
             title: t('items.2.title'),
             subTitle: t('items.2.subTitle')
         },
         {
-            icon: 'status-up',
+            icon: 'user-edit',
             title: t('items.3.title'),
             subTitle: t('items.3.subTitle')
-        },
-        {
-            icon: 'magicpen',
-            title: t('items.4.title'),
-            subTitle: t('items.4.subTitle')
-        },
-        {
-            icon: 'user-edit',
-            title: t('items.5.title'),
-            subTitle: t('items.5.subTitle')
         }
     ]
 

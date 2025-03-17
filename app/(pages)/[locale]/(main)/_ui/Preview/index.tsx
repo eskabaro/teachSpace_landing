@@ -23,20 +23,16 @@ const Preview: FC = () => {
 
     const list = [
         {
-            icon: 'book',
+            icon: 'magicpen',
             text: t('list.0.text')
         },
         {
-            icon: 'chart-success',
+            icon: 'mouse-square',
             text: t('list.1.text')
         },
         {
-            icon: 'status-up',
+            icon: 'chart-success',
             text: t('list.2.text')
-        },
-        {
-            icon: 'magicpen',
-            text: t('list.3.text')
         }
     ]
 
@@ -68,7 +64,7 @@ const Preview: FC = () => {
                     </Space>
                     <Button onClick={() => handleRedirectWithGTM(links.register)}>{t('button')}</Button>
                 </Space>
-                <VideoWrapper videoId='UvzIhvdLpls' />
+                <VideoWrapper videoId='u0AXLy2cQTg' />
                 <Space className={s.list} gap='6' lg={{ gap: '5' }} direction='horizontal' justify='center' as='ul'>
                     <Each
                         of={list}
