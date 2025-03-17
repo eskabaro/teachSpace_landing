@@ -24,6 +24,7 @@
     },
     "Header": {
         "signUp": "Sign up",
+        "login": "Log in",
         "menuLinks": {
             "problemsSolve": "Problems we solve",
             "whyUs": "Why choose us",
@@ -40,7 +41,8 @@
         "telegram": "Telegram",
         "whatsApp": "WhatsApp",
         "bookCall": "Book a call",
-        "signUp": "Sign up"
+        "signUp": "Sign up",
+        "login": "Log in"
     },
     "Preview": {
         "title": "Create materials in minutes",
@@ -81,7 +83,7 @@
         "items": [
             {
                 "title": "Simple Export to PDF",
-                "subTitle": "Easily download completed materials in PDF format for convenient sharing or use during lessons."
+                "subTitle": "Easily download completed materials in PDF format for convenient sharing or use during lessons"
             },
             {
                 "title": "24 Templates",

@@ -27,6 +27,7 @@ const MenuDrawer: FC = () => {
                         <MenuLink text={t('telegram')} href={links.contactUs} />
                         <MenuLink text={t('whatsApp')} href={links.whatsApp} />
                         <MenuLink text={t('bookCall')} href={links.bookCall} />
+                        <MenuLink href='#' text={t('login')} onClick={() => handleRedirectWithGTM(links.login)} />
                         <MenuLink href='#' text={t('signUp')} onClick={() => handleRedirectWithGTM(links.register)} />
                     </Space>
                 </Space>

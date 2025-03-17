@@ -12,7 +12,8 @@ const nextConfig = {
         CONTACT_US_LINK: process.env.CONTACT_US_LINK,
         BOOK_CALL_LINK: process.env.BOOK_CALL_LINK,
         WHATS_APP_LINK: process.env.WHATS_APP_LINK,
-        REGISTER_LINK: process.env.REGISTER_LINK
+        REGISTER_LINK: process.env.REGISTER_LINK,
+        LOGIN_LINK: process.env.LOGIN_LINK
     },
 
     webpack: (config) => {
