@@ -64,7 +64,7 @@ const Preview: FC = () => {
                     </Space>
                     <Button onClick={() => handleRedirectWithGTM(links.register)}>{t('button')}</Button>
                 </Space>
-                <VideoWrapper videoId='UvzIhvdLpls' />
+                <VideoWrapper videoId='u0AXLy2cQTg' />
                 <Space className={s.list} gap='6' lg={{ gap: '5' }} direction='horizontal' justify='center' as='ul'>
                     <Each
                         of={list}
