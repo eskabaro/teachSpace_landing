@@ -21,9 +21,14 @@ const Header: FC = () => {
             <Space className={s.header_menu} direction='horizontal'>
                 <MenuLinks />
             </Space>
-            <Button onClick={() => handleRedirectWithGTM(links.register)} className={s.header_btn}>
-                {t('signUp')}
-            </Button>
+            <Space className={s.header_btns} direction='horizontal' gap='6'>
+                <Button className={s.header_btns_login} variant='transparent' onClick={() => handleRedirectWithGTM(links.login)}>
+                    {t('login')}
+                </Button>
+                <Button className={s.header_btn} onClick={() => handleRedirectWithGTM(links.register)}>
+                    {t('signUp')}
+                </Button>
+            </Space>
             <Button className={s.header_burger} onClick={() => setIsOpen(true)} variant='transparent' mode='icon' icon='burger' />
         </Flex>
     )
